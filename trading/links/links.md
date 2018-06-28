@@ -1,0 +1,9 @@
+*[Arete Trading by Birger Schäfermeier -
+Interview with a Disappointed Customer (1/2)](https://www.brokerdeal.de/blog/arete-trading-von-birger-schaefermeier-nicht-alles-gold-was-glaenzt) (German)
+*[Currency trading - the casino of the banks and rich](https://www.infosperber.ch/index.cfm?go=Politik/Devisenhandel---das-Casino-der-Banken-und-Reichen) (German)
+* [The Brexit Short: How Hedge Funds Used Private Polls to Make Millions](https://www.bloomberg.com/news/features/2018-06-25/brexit-big-short-how-pollsters-helped-hedge-funds-beat-the-crash)
+*[Game of Phones: The Emergence of Smartphone-Backed Securities](https://ihsmarkit.com/research-analysis/19042017-Structured-Finance-Game-of-Phones-The-Emergence-of-Smartphone-Backed-Securities.html)
+*[The Psychological Price of Entrepreneurship](https://www.inc.com/magazine/201309/jessica-bruder/psychological-price-of-entrepreneurship.html)
+*[What Matters More in Decisions: Analysis or Process?](https://fs.blog/2013/03/what-matters-more-in-decisions-analysis-or-process/)
+*[The Danger of Oversimplification: How to Use Occam’s Razor Without Getting Cut](https://fs.blog/2017/05/mental-model-occams-razor/)
+*[Why SAFE notes are not safe for entrepreneurs](https://techcrunch.com/2017/07/08/why-safe-notes-are-not-safe-for-entrepreneurs/)
