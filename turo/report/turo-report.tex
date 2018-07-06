@@ -18,7 +18,7 @@
 %% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
 %% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
 %%
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[review,12pt]{elsarticle}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[preprint,review,12pt]{elsarticle}
@@ -45,6 +45,7 @@
 \usepackage{lineno}
 
 \usepackage{blindtext}
+\usepackage[hyphens]{url}
 \usepackage{hyperref}
   \hypersetup{
   bookmarks=true,         % show bookmarks bar?
@@ -152,9 +153,7 @@ Turo \sep car sharing \sep peer-to-peer \sep liability \sep insurance \sep money
 \section{Introduction and Background}
 \label{S:1}
 
-Maecenas \cite{Smith:2012qr} fermentum \cite{Smith:2013jd} urna ac sapien tincidunt lobortis. Nunc feugiat faucibus varius. Ut sed purus nunc. Ut eget eros quis lectus mollis pharetra ut in tellus. Pellentesque ultricies velit sed orci pharetra et fermentum lacus imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse commodo ultrices mauris, condimentum hendrerit lorem condimentum et. Pellentesque urna augue, semper et rutrum ac, consequat id quam. Proin lacinia aliquet justo, ut suscipit massa commodo sit amet. Proin vehicula nibh nec mauris tempor interdum. Donec orci ante, tempor a viverra vel, volutpat sed orci.
-
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque quis interdum velit. Nulla tincidunt sem quis nisi molestie nec hendrerit nulla interdum. Nunc at lectus at neque dapibus dapibus sit amet in massa. Nam ut nisl in diam consectetur dignissim. Sed lacinia diam id nunc suscipit vitae semper lorem semper. In vehicula velit at tortor fringilla elementum aliquam erat blandit. Donec pretium libero et neque vehicula blandit. Curabitur consequat interdum sem at ultrices. Sed at tincidunt metus. Etiam vulputate, lacus eget fermentum posuere, ante mi dignissim augue, et ultrices felis tortor sed nisl.
+\blindtext
 
 \begin{itemize}
 \item Bullet point one
@@ -168,7 +167,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 \subsection{Subsection One}
 
-Quisque elit ipsum, porttitor et imperdiet in, facilisis ac diam. Nunc facilisis interdum felis eget tincidunt. In condimentum fermentum leo, non consequat leo imperdiet pharetra. Fusce ac massa ipsum, vel convallis diam. Quisque eget turpis felis. Curabitur posuere, risus eu placerat porttitor, magna metus mollis ipsum, eu volutpat nisl erat ac justo. Nullam semper, mi at iaculis viverra, nunc velit iaculis nunc, eu tempor ligula eros in nulla. Aenean dapibus eleifend convallis. Cras ut libero tellus. Integer mollis eros eget risus malesuada fringilla mattis leo facilisis. Etiam interdum turpis eget odio ultricies sed convallis magna accumsan. Morbi in leo a mauris sollicitudin molestie at non nisl.
+\blindtext
 
 \begin{table}[h]
 \centering
@@ -186,14 +185,14 @@ Treatment 3 & 0.0009271 & 0.296 \\
 
 \subsection{Subsection Two}
 
-Donec eget ligula venenatis est posuere eleifend in sit amet diam. Vestibulum sollicitudin mauris ac augue blandit ultricies. Nulla facilisi. Etiam ut turpis nunc. Praesent leo orci, tincidunt vitae feugiat eu, feugiat a massa. Duis mauris ipsum, tempor vel condimentum nec, suscipit non mi. Fusce quis urna dictum felis posuere sagittis ac sit amet erat. In in ultrices lectus. Nulla vitae ipsum lectus, a gravida erat. Etiam quam nisl, blandit ut porta in, accumsan a nibh. Phasellus sodales euismod dolor sit amet elementum. Phasellus varius placerat erat, nec gravida libero pellentesque id. Fusce nisi ante, euismod nec cursus at, suscipit a enim. Nulla facilisi.
+\blindtext
 
 \begin{figure}[h]
 \centering\includegraphics[width=0.4\linewidth]{placeholder}
 \caption{Figure caption}
 \end{figure}
 
-Integer risus dui, condimentum et gravida vitae, adipiscing et enim. Aliquam erat volutpat. Pellentesque diam sapien, egestas eget gravida ut, tempor eu nulla. Vestibulum mollis pretium lacus eget venenatis. Fusce gravida nisl quis est molestie eu luctus ipsum pretium. Maecenas non eros lorem, vel adipiscing odio. Etiam dolor risus, mattis in pellentesque id, pellentesque eu nibh. Mauris nec ante at orci ultricies placerat ac non massa. Aenean imperdiet, ante eu sollicitudin vestibulum, dolor felis dapibus arcu, sit amet fermentum urna nibh sit amet mauris. Suspendisse adipiscing mollis dolor quis lobortis.
+\blindtext
 
 \begin{equation}
 \label{eq:emc}
@@ -202,11 +201,6 @@ e = mc^2
 
 \section{Liability Exposure and Insurance Coverage}
 \label{S:2}
-
-
-If the machine itself broke down, what actions does Turo take to pick up the car. (Do they pick up the car? Are there any charges?)
-If the renter violates the traffic rules, who is fined or ticketed and how? (where fines come, how to pay it first and how then compensation takes place)
-
 \subsection{Owner's Insurance}
 Turo offers three protection plans for owners who make their cars available for rent: basic, standard, and premium. The owner's choice of protection plan determines the share of the rental fee that the owner receives. Owners are also permitted to simply carry their own insurance on their vehicle.
 
@@ -224,7 +218,7 @@ The basic protection plan offers \$1,000,000 USD in liability insurance, covers 
 \subsubsection{Standard Protection}
 The standard protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive reimbursement for a replacement vehicle during the period of time that their personal vehicle is being repaired. At this level, owners receive 75\% of the trip fee.
 
-\subsubsection{Premium Protection}
+\subsubsection{Premium Protection}\label{owner-premium-protection}
 The premium protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive reimbursement for a replacement vehicle during the period of time that their personal vehicle is being repaired, includes coverage for wear and tear on the exterior of the vehicle, and also includes coverage for the loss of rental income.
 \footnote{Turo determines ``lost rental income'' by taking the mean daily rental earnings of the owner for the past 60 days and multiplying that dollar amount by the number of days that the owner's vehicle spent being repaired within a ``reasonable range.'' Turo's ``reasonable range'' is determined like so: Turo assumes that a mechanic should reasonably be able to put in four hours of labor per day to repair the vehicle. Turo takes the number of labor hours on the mechanic's estimate and divides it by four. This ``number of days'' is then multiplied by the 60-day mean rental earnings. In the event that the owner cannot pick up otherwise obtain the vehicle within the calculated number of days, Turo will not pay for futher days of lost rental income.
 }
@@ -248,7 +242,7 @@ The premium rental insurance option provides \$1,000,000 USD in bodily injury an
 \subsubsection{Basic Rental Insurance}\label{basic-rental-insurance}
 The basic rental insurance option provides \$1,000,000 USD in bodily injury and property damage coverage to renters. Personal injury protection coverage (also known as no-fault or first party benefits) are capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this amount may be \$0 USD. Uninsured/underinsured motorist coverage is also capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this may be \$0 USD. The renter's out-of-pocket exposure is limited to a deductible payment of \$3000 USD. In the event that the total costs are less than \$500, then the renter will be refunded the difference.
 
-\subsubsection{Declining Rental Insurance Coverage}
+\subsubsection{Declining Rental Insurance Coverage}\label{commercial-insurance}
 Renters are also allowed to decline a protection plan. In this case, the renter's exposure is effectively unlimited and is only bounded by the actual cash value of the vehicle plus all related costs, as determined by the process described in \S\ref{claims-process}. In the event that a rented vehicle is lost, stolen, or deemed a total loss,
 \footnote{For Turo's purpose, a ``total loss'' is defined by anticipated repair costs in excess of 75\% of the vehicle's actual cash value.
 }
@@ -262,7 +256,7 @@ Some renters may be able to obtain, or already have as a part of their personal 
 Some renters may be also be able to obtain, or already have as a part of their existing credit card account, coverage that extends to vehicles rented by the cardholder using that credit card as the payment method.
 
 Such coverage varies widely between insurance carriers and credit providers and may, in some cases, be deficient. Turo states that it is ``highly unlikely that [the renter] would be covered by any credit card insurance when [they] book cars through the Turo marketplace.''
-\footnote{https://support.turo.com/hc/en-us/articles/203990610-I-d-like-a-detailed-explanation-of-insurance-and-protection-provisions}
+\footnote{\url{https://support.turo.com/hc/en-us/articles/203990610-I-d-like-a-detailed-explanation-of-insurance-and-protection-provisions}}
 
 \subsubsection{Subrogation}
 Insurance offered by Turo is secondary to any existing coverage that the renter may have through other sources (\emph{i.e.,} that available through a credit card provider, personal auto policy, or other insurance policy). Practically speaking, the secondary nature of Turo's rental insurance offerings means that the renter is primarily liable, but can satisfy their obligations through other sources. In the event of a claim, Turo will first attempt to collect deductibles directly from the renter and then then seek reimbursement from other sources of coverage that the rent may have. (In US insurance practice, this process is known as subrogation.
@@ -270,7 +264,7 @@ Insurance offered by Turo is secondary to any existing coverage that the renter 
 }
 )
 
-\subsubsection{Exception to Elected Renter's Protection Plans}
+\subsubsection{Exception to Renter's Elected Protection Plans}
 In the event that the renter is found to have violated Turo's terms of service, engaged in prohibited uses of the rented vehicle, or is otherwise found to have recklessly used the rented vehicle, the deductible limits mentioned in \S\ref{premium-rental-insurance} and \S\ref{basic-rental-insurance} do not apply and the renter will be liable for physical damage up the full actual cash value of the vehicle including Turo's related costs.
 
 \subsection{Claims Process}\label{claims-process}
@@ -293,6 +287,64 @@ If a claim made to Turo is determined to be eligible, Turo notifies the renter a
 The owner is then presented with their options for resolution. They may elect to not pursue, the owner and the renter can elect to resolve the issue directly with each other, the owner may resolve the claim directly with the insurance carrier of the renter (or a third party in the event that the driver is found no to be at fault), or the claim may be processed through Turo's claims administrator.
 
 Depending on the resolution option elected by the parties, the owner's car may be repaired and the renter may be responsible for settling their financial obligations, including payment of their deductible.
+
+\section{Data and Metrics}
+How is the control of the distance traveled (if I travel more than the established number of miles, how will the service know about it and how money is written off; Is there a computer/logger/tracker inside the vehicle?)
+Can the car owner track the location of the car in real time? Alexander is confident that this is possible.
+Is there a gasoline and mileage reader in the car?
+
+\section{Logistics}
+How is the meeting with the owner (at what time are the contact data transmitted, what does the owner say at the meeting? How fast is this information exchanged? - what are the recommendations)
+How to set where you need to leave (return) the vehicle. Is it possible to drop the car off in another location?
+Is the renter responsible for filling the car up before returning it? Is the renter billed for the fuel cost? How does Turo establish how much fuel is needed?
+
+\section{Money Management}
+At what point in time is the money is debited from the renter? (immediately or after the return of the machine)
+Is there a security deposit taken at the time of reservation? How quickly is the deposit returned? Or do they reserve the right to charge your card at any time? What if the card Tx fails?
+
+\section{User Experience}
+
+If the Tenant did not like the car? If payment occurred before, how does the money refund happen? Canceling reservations?
+Similarly, for the cleanliness of the car - if I rent a car in a dirty condition, how to find out about this service and how payment is built. How does Turo know this information Does owner provide this information to Turo? If so, how? ? How do they mediate this?
+
+\subsection{User Responsibilities and Obligations}
+  \subsubsection{Wear and Tear}
+    \paragraph{Owners}
+    ``Normal wear and tear'' is the result of the normal operation of a vehicle and therefore should be an expected part of the experience of sharing or renting a car on Turo. Owners are not, under any circumstances, protected against normal wear and tear of the interior of their vehicle(s). Owners who have elected the premium protection plan (\S\ref{owner-premium-protection}) receive protection against normal exterior wear and tear.
+      \footnote{Defined by Turo as ``any dings, dents, cracks, or scratches to the exterior body of the vehicle that is 3 inches in diameter or less. This includes, but is not limited to, rims, wheels, hubcaps, any painted or textured area for the body of the vehicle, and moldings.'' See \url{https://support.turo.com/hc/en-us/articles/217043898}.
+      }
+    \paragraph{Renters}
+    Renters are not responsible for wear and tear that are the result of normal use of a vehicle.
+
+    Renters are fully responsible for damage that is the result of misuse or prohibited use of a vehicle, ``significant damage'' to the interior of a vehicle, and mechanical damage due to negligence, intentional acts, or improper driving on the part of the renter.
+      \footnote{Owners who decline any of Turo's in-house protection plans and instead opt to provide their own commercial insurance (see \S\ref{commercial-insurance}) are not covered by Turo against any of the aforementioned items.
+      }
+
+  \subsubsection{Mechanical Failure}
+  If the machine itself broke down, what actions does Turo take to pick up the car. (Do they pick up the car? Are there any charges?)
+  \subsection{Traffic Violations and Tickets}
+  If the renter violates the traffic rules, who is fined or ticketed and how? (where fines come, how to pay it first and how then compensation takes place)
+    \paragraph{Renters}
+    Renters are responsible for paying all tickets for violations that they commit during their trip, with the exception of moving violations and photo tickets.
+      \footnote{In the event that a vehicle is ticketed for speeding, running a red light, or other moving violations, including those captured by cameras, and the owner of the vehicle receives said ticket via mail, then Turo agrees that it will provide the information required by the ticketing body or to the owner such that the owner may contest the ticket and transfer liability for the moving violation to the renter.
+
+      Renters are not supposed to pay moving violations or photo tickets immediately because the liability for such violations (including ``points'' assigned in many US states) may be assigned to the owner of the vehicle for a traffic offense that they did not actually commit.
+      }
+    Renters are also responsible for parking tickets, towing fees, and fines that may be levied for up to 24 hours after the end of a trip, provided that such tickets, fines, and/or fees are a result of improper parking on the behalf of the renter.
+
+    The renter is responsible for informing the owner in the event that they receive a ticket during their trip and ought to immediately pay it.
+
+    \paragraph{Owners}
+    In the event that an owner notifies Turo that a ticket was received during the renter's trip or within the 24 hour period thereafter, Turo will charge the renter's payment method(s) for the total cost of the ticket plus administration fees levied by Turo. Owners must submit their requests for reimbursement within 90 days after the trip in question ended, provide documentation of the ticket, and receipts for payment of the ticket.
+
+\section{User Interface}
+We need all screenshots of the renter’s private office (after the trip is completed). I need screenshot of every page inside the app (Mobile and desktop)
+If it works: personal car owner's office - what he sees there, screenshots of the pages.
+Is there a single app for all users or do owners and renters each have dedicated apps?
+
+  \subsection{Renters}
+  \subsection{Owners}
+
 
 
 
