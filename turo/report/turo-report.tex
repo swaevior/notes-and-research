@@ -1,0 +1,320 @@
+%% This is file `elsarticle-template-1-num.tex',
+%%
+%% Copyright 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%%
+%% $Id: elsarticle-template-1-num.tex 149 2009-10-08 05:01:15Z rishi $
+%% $URL: http://lenova.river-valley.com/svn/elsbst/trunk/elsarticle-template-1-num.tex $
+%%
+\documentclass[preprint,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% The graphicx package provides the includegraphics command.
+\usepackage{graphicx}
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers after \end{frontmatter}.
+\usepackage{lineno}
+
+\usepackage{blindtext}
+\usepackage{hyperref}
+  \hypersetup{
+  bookmarks=true,         % show bookmarks bar?
+  unicode=false,          % non-Latin characters in Acrobat bookmarks
+  pdftoolbar=true,        % show Acrobat toolbar?
+  pdfmenubar=true,        % show Acrobat menu?
+  pdffitwindow=false,     % window fit to page when opened
+  pdfstartview={FitH},    % fits the width of the page to the window
+  pdftitle={Ludurel Service Agreement},    % title
+  pdfauthor={sb swae},     % author
+  pdfsubject={},   % subject of the document
+  pdfcreator={sb swae},   % creator of the document
+  pdfproducer={sb swae}, % producer of the document
+  pdfkeywords={}, % list of keywords
+  pdfnewwindow=true,      % links in new window
+  colorlinks=true,        % false: boxed links; true: colored links
+  linkcolor=Gray,         % color of internal links
+  citecolor=Gray,        % color of links to bibliography
+  filecolor=magenta,      % color of file links
+  urlcolor=Gray           % color of external links
+  }
+
+%% natbib.sty is loaded by default. However, natbib options can be
+%% provided with \biboptions{...} command. Following options are
+%% valid:
+
+%%   round  -  round parentheses are used (default)
+%%   square -  square brackets are used   [option]
+%%   curly  -  curly braces are used      {option}
+%%   angle  -  angle brackets are used    <option>
+%%   semicolon  -  multiple citations separated by semi-colon
+%%   colon  - same as semicolon, an earlier confusion
+%%   comma  -  separated by comma
+%%   numbers-  selects numerical citations
+%%   super  -  numerical citations as superscripts
+%%   sort   -  sorts multiple citations according to order in ref. list
+%%   sort&compress   -  like sort, but also compresses numerical citations
+%%   compress - compresses without sorting
+%%
+%% \biboptions{comma,round}
+
+% \biboptions{}
+
+\journal{Journal Name}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+\title{Management of Liability, Money, Logistics, and User Experience by Turo, Inc.}
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for the associated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for the associated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for the associated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%%
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{<author name>}
+%% \address[label1]{<address>}
+%% \address[label2]{<address>}
+
+\author{sb swae}
+
+\address{\href{mailto:sb.swae@gmail.com}{sb.swae@gmail.com}; \url{https://swaevior.io}}
+
+\begin{abstract}
+%% Text of abstract
+\blindtext
+\end{abstract}
+
+\begin{keyword}
+Turo \sep car sharing \sep peer-to-peer \sep liability \sep insurance \sep money \sep user experience \sep user interface
+%% keywords here, in the form: keyword \sep keyword
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%%
+%% Start line numbering here if you want
+%%
+\linenumbers
+
+%% main text
+\section{Introduction and Background}
+\label{S:1}
+
+Maecenas \cite{Smith:2012qr} fermentum \cite{Smith:2013jd} urna ac sapien tincidunt lobortis. Nunc feugiat faucibus varius. Ut sed purus nunc. Ut eget eros quis lectus mollis pharetra ut in tellus. Pellentesque ultricies velit sed orci pharetra et fermentum lacus imperdiet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse commodo ultrices mauris, condimentum hendrerit lorem condimentum et. Pellentesque urna augue, semper et rutrum ac, consequat id quam. Proin lacinia aliquet justo, ut suscipit massa commodo sit amet. Proin vehicula nibh nec mauris tempor interdum. Donec orci ante, tempor a viverra vel, volutpat sed orci.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque quis interdum velit. Nulla tincidunt sem quis nisi molestie nec hendrerit nulla interdum. Nunc at lectus at neque dapibus dapibus sit amet in massa. Nam ut nisl in diam consectetur dignissim. Sed lacinia diam id nunc suscipit vitae semper lorem semper. In vehicula velit at tortor fringilla elementum aliquam erat blandit. Donec pretium libero et neque vehicula blandit. Curabitur consequat interdum sem at ultrices. Sed at tincidunt metus. Etiam vulputate, lacus eget fermentum posuere, ante mi dignissim augue, et ultrices felis tortor sed nisl.
+
+\begin{itemize}
+\item Bullet point one
+\item Bullet point two
+\end{itemize}
+
+\begin{enumerate}
+\item Numbered list item one
+\item Numbered list item two
+\end{enumerate}
+
+\subsection{Subsection One}
+
+Quisque elit ipsum, porttitor et imperdiet in, facilisis ac diam. Nunc facilisis interdum felis eget tincidunt. In condimentum fermentum leo, non consequat leo imperdiet pharetra. Fusce ac massa ipsum, vel convallis diam. Quisque eget turpis felis. Curabitur posuere, risus eu placerat porttitor, magna metus mollis ipsum, eu volutpat nisl erat ac justo. Nullam semper, mi at iaculis viverra, nunc velit iaculis nunc, eu tempor ligula eros in nulla. Aenean dapibus eleifend convallis. Cras ut libero tellus. Integer mollis eros eget risus malesuada fringilla mattis leo facilisis. Etiam interdum turpis eget odio ultricies sed convallis magna accumsan. Morbi in leo a mauris sollicitudin molestie at non nisl.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l l l}
+\hline
+\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+\hline
+Treatment 1 & 0.0003262 & 0.562 \\
+Treatment 2 & 0.0015681 & 0.910 \\
+Treatment 3 & 0.0009271 & 0.296 \\
+\hline
+\end{tabular}
+\caption{Table caption}
+\end{table}
+
+\subsection{Subsection Two}
+
+Donec eget ligula venenatis est posuere eleifend in sit amet diam. Vestibulum sollicitudin mauris ac augue blandit ultricies. Nulla facilisi. Etiam ut turpis nunc. Praesent leo orci, tincidunt vitae feugiat eu, feugiat a massa. Duis mauris ipsum, tempor vel condimentum nec, suscipit non mi. Fusce quis urna dictum felis posuere sagittis ac sit amet erat. In in ultrices lectus. Nulla vitae ipsum lectus, a gravida erat. Etiam quam nisl, blandit ut porta in, accumsan a nibh. Phasellus sodales euismod dolor sit amet elementum. Phasellus varius placerat erat, nec gravida libero pellentesque id. Fusce nisi ante, euismod nec cursus at, suscipit a enim. Nulla facilisi.
+
+\begin{figure}[h]
+\centering\includegraphics[width=0.4\linewidth]{placeholder}
+\caption{Figure caption}
+\end{figure}
+
+Integer risus dui, condimentum et gravida vitae, adipiscing et enim. Aliquam erat volutpat. Pellentesque diam sapien, egestas eget gravida ut, tempor eu nulla. Vestibulum mollis pretium lacus eget venenatis. Fusce gravida nisl quis est molestie eu luctus ipsum pretium. Maecenas non eros lorem, vel adipiscing odio. Etiam dolor risus, mattis in pellentesque id, pellentesque eu nibh. Mauris nec ante at orci ultricies placerat ac non massa. Aenean imperdiet, ante eu sollicitudin vestibulum, dolor felis dapibus arcu, sit amet fermentum urna nibh sit amet mauris. Suspendisse adipiscing mollis dolor quis lobortis.
+
+\begin{equation}
+\label{eq:emc}
+e = mc^2
+\end{equation}
+
+\section{Liability Exposure and Insurance Coverage}
+\label{S:2}
+
+What kind of insurance is included when renting a car, what options are offered. Who is responsible for payment?
+If the car is in an accident - what actions are taken? If the driver (the tenant) is guilty, is the fine taken and how is it considered? What about if the driver is not at fault? If the machine itself broke down, what actions does Turo take to pick up the car. (Do they pick up the car? Are there any charges?)
+If the renter violates the traffic rules, who is fined or ticketed and how? (where fines come, how to pay it first and how then compensation takes place)
+
+\subsection{Owner's Insurance}
+Turo offers three protection plans for owners who make their cars available for rent: basic, standard, and premium. The owner's choice of protection plan determines the share of the rental fee that the owner receives. Owners are also permitted to simply carry their own insurance on their vehicle.
+
+Insurance coverage in the United States is provided by a group plan administered by Liberty Mutual.
+
+Turo openly admits that their protection plans come with an inherent level of uncertainty. Turo senior claims manager Chris Aragon states that, ``If there’s an engine failure, and it’s something that’s caused by a mechanical failure and not something that the renter could have caused by using the vehicle, that’s something that is not covered by us. That’s something that’s just a mechanical breakdown that you’d be expected to pay for.''
+  \footnote{
+  Kristen Lee. Jalopnik, 22 February 2017. \url{https://jalopnik.com/how-insurance-works-when-you-rent-out-your-car-on-turo-1792401490}
+  }
+This is consistent with standard insurance practices in the United States. Insurance carriers do not typically provide coverage for mechanical failures in vehicles as these cases are often covered by warranties. In the event that a component of the vehicle fails due to driver abuse, Turo states that it will determine the cause.
+
+\subsubsection{Basic Protection}
+The basic protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to a \$125,000 USD, and has a \$3,000 USD deductible. Private auto insurance deductibles in the United Staes typically range between \$100 and \$1000 USD, though they can be as high as \$2500 in some cases. Under this plan, Turo will pay 20\% up to the first \$3,750 of a damage claim and then covers 100\% beyond that limit, up to a cap of \$125,000. At this level, owners receive 85\% of the trip fee.
+
+\subsubsection{Standard Protection}
+The standard protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive a replacement vehicle during the period of time that their personal vehicle is being repaired. At this level, owners receive 75\% of the trip fee.
+
+\subsubsection{Premium Protection}
+The premium protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive a replacement vehicle during the period of time that their personal vehicle is being repaired, includes coverage for wear and tear on the exterior of the vehicle, and also includes coverage for the loss of rental income. At this level, owners receive 65\% of the trip fee.
+
+\subsubsection{Owner-provided Protection}
+Vehicle owners also have the option of opting-out of any coverage provided that they carry commercial insurance on their own. Such an insurance policy is typically only carried by businesses. At this level, owners receive 90\% of the trip fee and have no protection whatsoever provided to them by Turo or Liberty Mutual.
+
+\subsection{Renter's Insurance}
+Renters are presented with a trio of insurance coverage options.
+
+Physical damage protection includes both comprehensive (property damage or loss to a vehicle, including theft, fire, impacts with wildlife,  vandalism, and acts of nature) and collision (protection in the event that two or more vehicles impact each other or in the event that a single vehicle suffers and impact with an object) coverage.
+
+Personal injury protection varies widely by state, but typically provides coverage for medical expenses, lost income, funeral expenses, and the like for for the driver and passenger in the vehicle with no regard given to who is at fault.
+
+Uninsured/underinsured motorist coverage pays the renter of the renter's passengers for bodily injury they may suffer in the event that they experience a collision caused by a driver without insurance, a hit-and-run driver, a driver who has exhausted the benefits available to them under their own insurance plan, or a driver whose insurance carrier is found to be insolvent and therefore incapable of paying a claim.
+
+\subsubsection{Premium Rental Insurance}
+The premium rental insurance option provides \$1,000,000 USD in bodily injury and property damage coverage to renters. Personal injury protection coverage (also known as no-fault or first party benefits) are capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this amount may be \$0 USD. Uninsured/underinsured motorist coverage is also capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this may be \$0 USD. The renter's out-of-pocket exposure is limited to a deductible payment of \$500, which is collected when the owner reports damage. In the event that the total costs are less than \$500, then the renter will be refunded the difference.
+
+\subsubsection{Basic Rental Insurance}
+The basic rental insurance option provides \$1,000,000 USD in bodily injury and property damage coverage to renters. Personal injury protection coverage (also known as no-fault or first party benefits) are capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this amount may be \$0 USD. Uninsured/underinsured motorist coverage is also capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this may be \$0 USD. The renter's out-of-pocket exposure is limited to a deductible payment of \$3000 USD. In the event that the total costs are less than \$500, then the renter will be refunded the difference.
+
+\subsubsection{Declining Rental Insurance Coverage}
+Renters are also allowed to decline a protection plan. In this case, the renter's exposure is effectively unlimited and is only bounded by the actual cash value of the vehicle plus all related costs, as determined by the process described in \S\ref{claims-process}. In the event that a rented vehicle is lost, stolen, or deemed a total loss,
+\footnote{For Turo's purpose, a ``total loss'' is defined by anticipated repair costs in excess of 75\% of the vehicle's actual cash value.
+}
+then the renter is liable for paying the entire actual cash value of the vehicle, plus all related costs and minus any residual salvage value.
+\footnote{Salvage value is the expected sale value of an asset at the end of its useful life. Insurance companies may employ a number of methods to determine the salvage value of a vehicle, but it is often classified as the sum value of the remaining usable parts in a vehicle.
+}
+
+\subsubsection{Other Sources of Renter's Insurance}
+Some renters may be able to obtain, or already have as a part of their personal auto insurance policy, coverage that extends to vehicles rented by the primary policy holder.
+
+Some renters may be also be able to obtain, or already have as a part of their existing credit card account, coverage that extends to vehicles rented by the cardholder using that credit card as the payment method.
+
+Such coverage varies widely between insurance carriers and credit providers and may, in some cases, be deficient. Turo states that it is ``highly unlikely that [the renter] would be covered by any credit card insurance when [they] book cars through the Turo marketplace.''
+\footnote{https://support.turo.com/hc/en-us/articles/203990610-I-d-like-a-detailed-explanation-of-insurance-and-protection-provisions}
+
+\subsubsection{Exception to Elected Renter's Protection Plans}
+In the event that the renter is found to have violated Turo's terms of service, engaged in prohibited uses of the rented vehicle, 
+
+\subsection{Claims Process}\label{claims-process}
+Turo uses a third-party administrator called the Littleton Group to determine a vehicle's actual cash value. Littleton, in turn, uses AutoClaims Direct, a nation-wide network of independent auto appraisers. In the event of a claim, AutoClaims Direct will dispatch an appraiser to perform a visual inspection of the vehicle and to obtain photographic documentation of the vehicle's condition. The appraiser will also collect information on the general condition of the vehicle, the odometer reading, and any other information that may help accurately determine the value of the vehicle.
+
+Software is employed to sweep across the market to obtain information on comparable vehicles to the one subject to a claim. The software will then determine the value of the vehicle based on how it compares in condition and mileage to comparable vehicles on the market at that time. It may also include a factor that accounts for depreciation.
+
+Reference to Section \ref{S:1}. Etiam congue sollicitudin diam non porttitor. Etiam turpis nulla, auctor a pretium non, luctus quis ipsum. Fusce pretium gravida libero non accumsan. Donec eget augue ut nulla placerat hendrerit ac ut mi. Phasellus euismod ornare mollis. Proin tempus fringilla ultricies. Donec pretium feugiat libero quis convallis. Nam interdum ante sed magna congue eu semper tellus sagittis. Curabitur eu augue elit.
+
+Aenean eleifend purus et massa consequat facilisis. Etiam volutpat placerat dignissim. Ut nec nibh nulla. Aliquam erat volutpat. Nam at massa velit, eu malesuada augue. Maecenas sit amet nunc mauris. Maecenas eu ligula quis turpis molestie elementum nec at est. Sed adipiscing neque ac sapien viverra sit amet vestibulum arcu rhoncus.
+
+Vivamus pharetra nibh in orci euismod congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque lacus diam, congue vel laoreet id, iaculis eu sapien. In id risus ac leo pellentesque pellentesque et in dui. Etiam tincidunt quam ut ante vestibulum ultricies. Nam at rutrum lectus. Aenean non justo tortor, nec mattis justo. Aliquam erat volutpat. Nullam ac viverra augue. In tempus venenatis nibh quis semper. Maecenas ac nisl eu ligula dictum lobortis. Sed lacus ante, tempor eu dictum eu, accumsan in velit. Integer accumsan convallis porttitor. Maecenas pretium tincidunt metus sit amet gravida. Maecenas pretium blandit felis, ac interdum ante semper sed.
+
+In auctor ultrices elit, vel feugiat ligula aliquam sed. Curabitur aliquam elit sed dui rhoncus consectetur. Cras elit ipsum, lobortis a tempor at, viverra vitae mi. Cras sed urna sed eros bibendum faucibus. Morbi vel leo orci, vel faucibus orci. Vivamus urna nisl, sodales vitae posuere in, tempus vel tellus. Donec magna est, luctus non commodo sit amet, placerat et enim.
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% References
+%%
+%% Following citation commands can be used in the body text:
+%% Usage of \cite is as follows:
+%%   \cite{key}          ==>>  [#]
+%%   \cite[chap. 2]{key} ==>>  [#, chap. 2]
+%%   \citet{key}         ==>>  Author [#]
+
+%% References with bibTeX database:
+
+\bibliographystyle{model1-num-names}
+\bibliography{sample.bib}
+
+%% Authors are advised to submit their bibtex database files. They are
+%% requested to list a bibtex style file in the manuscript if they do
+%% not want to use model1-num-names.bst.
+
+%% References without bibTeX database:
+
+% \begin{thebibliography}{00}
+
+%% \bibitem must have the following form:
+%%   \bibitem{key}...
+%%
+
+% \bibitem{}
+
+% \end{thebibliography}
+
+
+\end{document}
+
+%%
+%% End of file `elsarticle-template-1-num.tex'.
