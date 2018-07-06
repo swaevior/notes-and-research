@@ -291,11 +291,28 @@ The owner is then presented with their options for resolution. They may elect to
 Depending on the resolution option elected by the parties, the owner's car may be repaired and the renter may be responsible for settling their financial obligations, including payment of their deductible.
 
 \section{Data and Metrics}
-How is the control of the distance traveled (if I travel more than the established number of miles, how will the service know about it and how money is written off; Is there a computer/logger/tracker inside the vehicle?)
-Can the car owner track the location of the car in real time? Alexander is confident that this is possible.
-Is there a gasoline and mileage reader in the car?
+  \subsection{Data Collection}
+  At this time, Turo relies entirely on renters and owners to provide data to the company about the vehicles available on the marketplace.
+  \subsection{Mileage}
+  Mileage tracking is performed by the owner by submitting photos before and after a trip. All cars on the Turo marketplace have daily, weekly, and monthly mileage limits that are set by the owner.
+  \subsection{Location Tracking}
+  Turo does not support vehicle location tracking.
+  \subsection{Fuel}
+  Fuel tracking is performed by the owner by submitting photos of the fuel gauge before and after a trip. Renters are required to replace the fuel that they use.
+  \subsection{Turo Go}
+  Turo is presently signing users up for a beta program called Turo Go that will collect data and also allow renters to unlock a car using their smartphone, thereby sidestepping the issue of needing to liaise in person with the owner of the vehicle.
+  \footnote{\url{https://explore.turo.com/turo-go-announce/}}
+  \footnote{\url{https://www.motorauthority.com/news/1117212_truly-keyless-entry-turo-go-unlocks-registered-cars-with-a-smartphone}
+  }
+  \footnote{\url{https://www.cnet.com/roadshow/news/turo-go-will-allow-instant-car-rentals/}
+  }
+  \footnote{\url{https://www.autorentalnews.com/304179/turo-users-to-unlock-cars-via-app}
+  }
 
 \section{Logistics}
+  \subsection{Picking Up a Vehicle}
+  \subsection{Delivery Option}
+  \subsection{Returning a Vehicle}
 How is the meeting with the owner (at what time are the contact data transmitted, what does the owner say at the meeting? How fast is this information exchanged? - what are the recommendations)
 How to set where you need to leave (return) the vehicle. Is it possible to drop the car off in another location?
 Is the renter responsible for filling the car up before returning it? Is the renter billed for the fuel cost? How does Turo establish how much fuel is needed?
@@ -306,8 +323,12 @@ Is there a security deposit taken at the time of reservation? How quickly is the
 
 \section{User Experience}
 
-If the Tenant did not like the car? If payment occurred before, how does the money refund happen? Canceling reservations?
-Similarly, for the cleanliness of the car - if I rent a car in a dirty condition, how to find out about this service and how payment is built. How does Turo know this information Does owner provide this information to Turo? If so, how? ? How do they mediate this?
+If the Tenant did not like the car? If payment occurred before, how does the money refund happen?
+
+\subsection{Security Deposits}
+In some cases, Turo may require renters to pay a security deposit before they will be permitted to drive a vehicle. Deposits are collected in full before a trip begins. Instantly booked trips see the deposit added at checkout while trips requiring owner approval will see deposits charged when the owner approves the trip. If the deposit cannot be collected, booking of the trip will fail.
+
+Deposits are returned to renters 80 hours after the car has been returned to the owner in the same condition that it was found in.
 
 \subsection{User Responsibilities and Obligations}
   \subsubsection{Wear and Tear}
@@ -323,12 +344,22 @@ Similarly, for the cleanliness of the car - if I rent a car in a dirty condition
       }
 
   \subsubsection{Mechanical Failure}
-  If the machine itself broke down, what actions does Turo take to pick up the car. (Do they pick up the car? Are there any charges?)
     \paragraph{Renters}
+    If the vehicle that a renter is using is covered by one of Turo's own protection plans, then renters can be connected with a dispatcher, available 24/7 who has the ability to send a service provider to the vehicle's location. Roadside assistance is only available in the United States, Canada, and Germany.
+
+    Turo states that renters should be aware that they may be liable for ``fees associated with the actual services provided (towing, locksmith, battery jump, etc.) during the event.''
+    \footnote{``Do you offer national roadside assistance?'' Turo Support. Retrieved from \url{https://support.turo.com/hc/en-us/articles/203990910-Do-you-offer-national-roadside-assistance-}
+    }
+
+    In the event that the renter is using a vehicle that was listed on Turo by an owner who has brought their own commercial insurance,
+    \footnote{See \S\ref{commercial-insurance}}
+    }
+    then roadside assistance will be provided by that vehicle's owner and/or their insurance carrier. In these cases, renters are instructed to direct their questions about or requests for roadside assistance to the owner of the vehicle.
+
     \paragraph{Owners}
     Owners are required to ensure that their vehicle complies with laws and regulations pertaining to vehicle safety, condition, and operation, including any local seasonal rules or regulations.
 
-    Turo recommends that owners obtain an annual mechanical and safety inspection with an ASE-certified
+    Turo recommends that owners obtain an annual mechanical and safety inspection from an ASE-certified
     \footnote{Automotive Service Excellence.}
     }
     mechanic. From time to time, Turo may ask owners to obtain an inspection. In this event, owners will download an inspection form provided by Turo, schedule the ASE inspection, and return the completed form.
@@ -350,6 +381,56 @@ Similarly, for the cleanliness of the car - if I rent a car in a dirty condition
 
     \paragraph{Owners}
     In the event that an owner notifies Turo that a ticket was received during the renter's trip or within the 24 hour period thereafter, Turo will charge the renter's payment method(s) for the total cost of the ticket plus administration fees levied by Turo. Owners must submit their requests for reimbursement within 90 days after the trip in question ended, provide documentation of the ticket, and receipts for payment of the ticket.
+
+  \subsubsection{Canceling a Reservation}
+    \paragraph{Renters}
+    Turo's cancellation policy
+    \footnote{``Cancellation Policy.'' Turo. Retrieved from \url{https://turo.com/policies/cancellation}
+    }
+    states that renters may cancel their trips through the Turo website or mobile apps. Cancellations take place immediately.
+
+    If a renter cancels a trip within one hour of making the reservation, they are refunded 100\% of the trip price and 100\% of the Turo trip fee. Cancellations made more than seven days before a trip is scheduled to begin result in 100\% of the trip price being refunded, but Turo keeps the trip fee. Renters receive a refund for 90\% of the trip price and 0\% of the trip fee if cancellations are made between 1 and 7 days of the trip's scheduled start. Cancellations made with less than 24 hours remaining until the scheduled start of the trip are not eligible for any refunds.
+
+    Protection fees are refunded in full if the renter cancels the trip before the trip is scheduled to start, as are young driver fees.
+
+    \paragraph{Owners}
+    In the event that the owner of the vehicle needs to cancel a trip, then they must contact the renter in writing using the Turo website or mobile apps. Cancellations by owners are effective immediately and result in a 100\% refund being issued to the renter.
+
+    Hosts will be charged a \$50 USD fee if they cancel a trip with fewer than 24 hours remaining until the trip's scheduled start. Cancellations made by owners outside of the 24 hour window result in a \$25 USD fee being charged to the owner. Turo states that additional penalties, including having a car delisted, may result if an owner repeatedly cancels trips.
+
+    \paragraph{Flight Delays and Flight Cancellations}
+    In the event that a flight that the renter was scheduled to take is delayed or canceled, Turo requires the renter to make contact with the owner to request a modification to the trip's itinerary to reflect a new start time. Owners are expected to make a good faith effort to accommodate new start times for trips.
+
+    In the event that the owner cannot or does not accommodate a new start time for the trip as the result of a flight delay or cancellation, Turo will issue a 100\% refund to renters. Renters must provide evidence that their flight suffered an issue.
+
+    Renters must make contact with owners at 1 hour before the trip start time to be eligible for a refund. They must also notify Turo within 24 hours after the scheduled start time of trip in order to be eligible for a refund.
+
+  \subsubsection{Cleaning Cars}
+  Owners are expected to provide clean cars to renters. Renters are instructed to contact Turo Support if they take possession of a car that is dirty. Similarly, renters are expected to return vehicles in the same or better condition as when they found them. Owners are also instructed to contact Turo Support if their vehicle is returned them in unclean condition.
+
+    \paragraph{Cleaning Claims}
+    Turo requires owners to send before and after pictures within 24 hours of a trip's end if their car was returned to them in unclean condition. The check-in and check-out features of the mobile apps are recommended for prompt filing and handling of cleaning claims. After Turo has reviewed the information, Turo may receive a reimbursement based on the severity of the claim.
+
+    \paragraph{Cleaning Fines and Fees}
+    \begin{itemize}
+      \item Not Eligible
+      Small amounts of refuse, crumbs, dirt, or sand, small marks that can be easily cleaned.
+      \item Light Cleaning: \$30
+      Significantly dirtier exterior than when car was rented out; significantly dirtier floor mats; large amounts of crumbs, dirt, sand, or food.
+      \item Medium Cleaning: \$50
+      Light stains or residue on hard surfaces.
+      \item Heavy Cleaning: \$100
+      Major stains or residue on fabric or other hard-to-clean surfaces.
+      \item Severe Cleaning: \$150
+      Any of the previously mentioned situations at such a level that cleanup requires steam cleaning or detailing of the vehicle.
+      \item Pet Hair: \$150
+      Applicable to events in which a pet enters a vehicle without prior consent of the owner, events in which the owner consents to the presence of a pet but the vehicle is returned with significant amounts of pet hair. Turo includes service animals in this policy.
+      \item Smoking: \$50 or \$150
+      \$50 charged for smoke smell removal and \$150 for smoke smell removal and removal or cleaning of cigarette butts, ash, etc. In the event that burn marks are found in a returned vehicle, owners are instructed to submit a damage claim, not request reimbursement for cleaning.
+      \item Maximum: \$250
+      Reserved for a combination of issues like the combination of smoke remnants and severe cleaning level soiling.
+
+    \end{itemize}
 
 \section{User Interface}
 We need all screenshots of the renter’s private office (after the trip is completed). I need screenshot of every page inside the app (Mobile and desktop)
