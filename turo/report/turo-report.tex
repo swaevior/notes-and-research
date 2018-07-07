@@ -151,53 +151,24 @@ Turo \sep car sharing \sep peer-to-peer \sep liability \sep insurance \sep money
 
 %% main text
 \section{Introduction and Background}
-\label{S:1}
+Formerly known as RelayRides, Turo, Inc., is a company that operates a peer-to-peer car sharing marketplace that allows private owners of vehicles to make them available for rent using an online and/or mobile app interface. In 2017, Turo had approximately four million registered users and 170,000 cars available for rent.
+    \footnote{``Peer-to-peer car rental start-up Turo heads to Germany.'' USA Today, 6 Sept 2017. \url{https://www.usatoday.com/story/tech/2017/09/06/turn-funding-round-92-million-from-daimler/634102001/}
+    }
+The company now has six million registered users and the service covers 5,500 cities across 56 countries.
+  \footnote{\url{https://www.motorauthority.com/news/1117212_truly-keyless-entry-turo-go-unlocks-registered-cars-with-a-smartphone}
+  }
+  The company is based in San Francisco and operates in every US state except New York. To date, it has raised over \$180M in venture capital funding.
+    \footnote{\url{https://www.crunchbase.com/organization/turo}}
+  Turo announced a \$92 M series D funding round in 2017 that was led by Daimler AG. In the process, Turo also acquired Croove, Daimler's German car sharing service. Turo launched in Germany in January 2018.
+    \footnote{``The Airbnb of Cars Just Bought A Startup From Its NeWest Investor.'' Fortune, 6 September 2017. \url{http://fortune.com/2017/09/06/turo-mercedes-daimler/}
+    }
 
-\blindtext
+  The service is popular; its app has been downloaded more than 45,000
+  \footnote{\url{https://www.crunchbase.com/apptopia_app/e81be748-e411-442a-b218-98316adf73ec\#section-overview}}
+  times and the Website receives more than 2.1M
+    \footnote{\url{https://www.crunchbase.com/organization/turo\#section-web-traffic-by-similarweb}}
+   visitors each month. Estimates place Turo's revenue at \$10M.
 
-\begin{itemize}
-\item Bullet point one
-\item Bullet point two
-\end{itemize}
-
-\begin{enumerate}
-\item Numbered list item one
-\item Numbered list item two
-\end{enumerate}
-
-\subsection{Subsection One}
-
-\blindtext
-
-\begin{table}[h]
-\centering
-\begin{tabular}{l l l}
-\hline
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\hline
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\hline
-\end{tabular}
-\caption{Table caption}
-\end{table}
-
-\subsection{Subsection Two}
-
-\blindtext
-
-\begin{figure}[h]
-\centering\includegraphics[width=0.4\linewidth]{placeholder}
-\caption{Figure caption}
-\end{figure}
-
-\blindtext
-
-\begin{equation}
-\label{eq:emc}
-e = mc^2
-\end{equation}
 
 \section{Liability Exposure and Insurance Coverage}
 \label{S:2}
@@ -227,7 +198,7 @@ At this level, owners receive 65\% of the trip fee.
 \subsubsection{Owner-provided Protection}
 Vehicle owners also have the option of opting-out of any coverage provided that they carry commercial insurance on their own. Such an insurance policy is typically only carried by businesses. At this level, owners receive 90\% of the trip fee and have no protection whatsoever provided to them by Turo or Liberty Mutual.
 
-\subsection{Renter's Insurance}
+\subsection{Renter's Insurance}\label{renters-insurance}
 Renters are presented with a trio of insurance coverage options.
 
 Physical damage protection includes both comprehensive (property damage or loss to a vehicle, including theft, fire, impacts with wildlife,  vandalism, and acts of nature) and collision (protection in the event that two or more vehicles impact each other or in the event that a single vehicle suffers and impact with an object) coverage.
@@ -260,7 +231,7 @@ Such coverage varies widely between insurance carriers and credit providers and 
 
 \subsubsection{Subrogation}
 Insurance offered by Turo is secondary to any existing coverage that the renter may have through other sources (\emph{i.e.,} that available through a credit card provider, personal auto policy, or other insurance policy). Practically speaking, the secondary nature of Turo's rental insurance offerings means that the renter is primarily liable, but can satisfy their obligations through other sources. In the event of a claim, Turo will first attempt to collect deductibles directly from the renter and then then seek reimbursement from other sources of coverage that the rent may have. (In US insurance practice, this process is known as subrogation.
-\footnote{Subrogation is the legal doctrine through which one party is entitled to enforce the legal rights or protections of another party for its own benefit.
+\footnote{Subrogation is the common law legal doctrine through which one party is entitled to enforce the legal rights or protections of another party for its own benefit.
 }
 )
 
@@ -310,25 +281,81 @@ Depending on the resolution option elected by the parties, the owner's car may b
   }
 
 \section{Logistics}
+  \subsection{Reserving a Vehicle}
+  Some vehicles on Turo are available for instant booking and do not require the consent of the owner.
+
+  Most vehicles, however, have an arbitrary limit (on the order of 12, 24, 48, etc. hours advance notice) that the owners sets on his or her listing. Reservations are denied if an attempt is made by a renter to reserve a car inside of the owner's specified window. Vehicles that are reserved in this fashion also require the owner to manually authorize such trips.
+
   \subsection{Picking Up a Vehicle}
+  At this time, renters must meet in person with the owner of the vehicle in order to obtain keys to the vehicle. Turo recommends that renters and owners both take pictures of the vehicle's interior and exterior to aid in potential claims after the vehicle is returned.
+
   \subsection{Delivery Option}
+  Owners may configure their listing to allow for delivery to local airports or an arbitrary location elected by the renter. The fee for this service is typically \$50 USD.
+
   \subsection{Returning a Vehicle}
-How is the meeting with the owner (at what time are the contact data transmitted, what does the owner say at the meeting? How fast is this information exchanged? - what are the recommendations)
-How to set where you need to leave (return) the vehicle. Is it possible to drop the car off in another location?
-Is the renter responsible for filling the car up before returning it? Is the renter billed for the fuel cost? How does Turo establish how much fuel is needed?
+  By default, a vehicle must be returned to the location from which it was picked up. There does exist anecdotal evidence of renters contacting owners to strike an informal agreement to drop off at a different location.
 
 \section{Money Management}
-At what point in time is the money is debited from the renter? (immediately or after the return of the machine)
-Is there a security deposit taken at the time of reservation? How quickly is the deposit returned? Or do they reserve the right to charge your card at any time? What if the card Tx fails?
+
+  \subsection{Payment Methods and Payment Timing}
+  In the United States. Turo accepts credit cards branded as Visa, Mastercard, Discover, or American Express, debit cards branded Visa or Mastercard, Apple Pay, and Google Pay. These payment methods are required to be in the name of the Turo account holder.
+
+  Turo does not accept prepaid card, temporary bank cards, or cards that are not linked to a bank account.
+  \subsection{Payment Timing}\label{timing}
+    \subsubsection{Renters}
+    Owners of vehicles listed on Turo may elect to manually approve each reservation request from renters or they may make designate their vehicle as one that renters can ``Book Instantly.''
+
+    Under the manual-approval option, renters' debit or credit cards are authorized
+    \footnote{An authorization hold, preauthorization, preauth, or card authorization is the practice of verifying transactions that have been initiate with a debit or credit card. Banks will make the balance required to pay the charge unavailable until either the merchant clears the transaction or the hold ``falls off,'' typically within 3 to 5 business days.
+    }
+    but not yet charged. When the owner approves the booking, Turo then clears the transaction and the renter's card is charged.
+
+    The Apple Pay and Google Wallet payments methods are charged immediately.
+
+    When a vehicle that is listed as instantly available is booked, the renter's payment method is immediately charged.
+
+    \subsubsection{Owners}
+    Thirty minutes after a trip ends, Turo automatically initiates ACH payments
+    \footnote{Automated Clearing House, or ACH, is an electronic network for financial transactions in the United States. ACH credits include direct deposits and payroll. It is also possible to make debit transactions using ACH out of bank accounts. ACH transactions typically take 1-3 business days to clear.
+    }
+    for then owner's share of the trip price. For extended trips, owners receive a partial payment on day 7 of the trip and subsequent partial payments every seven days until the trip ends. To allow ACH transactions, owners must provide Turo with the account and routing number of their bank account. Turo says that a PCI Level 1-compliant third party stores this information and facilitates payments.
+
+  \subsection{Pricing}
+    \subsubsection{Trip Pricing}
+    Owners may price their vehicles themselves or allow Turo to determine pricing for them based on vehicle make, model, year, mileage, and geographic area. Renters may toggle the days and length of their trip and pricing updates live online and in the apps. Hosts may also charge different amounts for different days of the week (\emph{e.g.,} weekends) or a different daily rate for longer trips (typically a discount).
+    \subsubsection{Trip Fee}
+    Renters also pay a trip fee that is calculated as a variable percentage of up to 25\% of the trip price. Renters are shown the exact amount as they are checking out. Turo states that the trip fee covers operating costs.
+    \subsubsection{Protection Plan Pricing}
+    Turo offers three protection plans, premium, basic, and no protection (See \S\ref{renters-insurance}). In the United States, premium protection is 40\% of the trip price, basic is 15\%, and there is no charge for renter who choose to decline a protection plan. Some vehicle owners who opt to carry their own commercial insurance are allowed to charge a their own fee for that protection. Owners are supposed to declare whether they are charging a separate protection fee or if that cost is included in the trip price.
+
+  \subsection{Young Driver Fees}
+  Renters between the ages of 21 and 24 incur a charge that is calculated as the great of 30\% of the trip price or \$10 USD, whichever is greater. Vehicles in the marketplace whose owners have chosen to carry their own commercial insurance do not incur this cost and such owners are permitted to charge young drivers their own fee. Owners are supposed to declare whether they are charging a young driver fee.
+
+  \subsection{Security Deposits}
+  In some cases, Turo may require renters to pay a security deposit before they will be permitted to drive a vehicle. Deposits are collected in full before a trip begins. Instantly booked trips see the deposit added at checkout while trips requiring owner approval will see deposits charged when the owner approves the trip. If the deposit cannot be collected, booking of the trip will fail.
+
+  Deposits are returned to renters 80 hours after the car has been returned to the owner in the same condition that it was found in.
+
+  \subsection{Delivery Fees}
+  Owners may elect to offer to deliver their cars to local airports or custom locations. These fees, when applicable, are clearly noted in the listing for the vehicle.
+
+  \subsection{Extras}
+  Some owners may elect to offer ``Extras'' to their renters and is permitted to set their own fees for these types of items. Where applicable, fees for extras are displayed at checkout time. Extras may include things like tents, roof racks, bikes, and kayaks, as examples of physical items, and post-trip refueling, unlimited mileage, or post-trip cleaning as intangibles. Owners may charge a flat fee for an extra or they may choose to charge on a daily basis.
+
+  \subsection{Refunds}
+  Refunds for US payment methods typically take 3 to 5 business days and are deposited back into the account used to originally make the payment.
+
+  \subsection{Payment Authorization}
+  See \S\ref{timing} for a discussion of card authorizations and payment timing.
+
+  \subsection{Ending a Trip Early}
+  Renters who end their trips early, do so through the website or mobile app, and receive approval from the owner, are eligible to receive a partial refund.
+
 
 \section{User Experience}
 
 If the Tenant did not like the car? If payment occurred before, how does the money refund happen?
 
-\subsection{Security Deposits}
-In some cases, Turo may require renters to pay a security deposit before they will be permitted to drive a vehicle. Deposits are collected in full before a trip begins. Instantly booked trips see the deposit added at checkout while trips requiring owner approval will see deposits charged when the owner approves the trip. If the deposit cannot be collected, booking of the trip will fail.
-
-Deposits are returned to renters 80 hours after the car has been returned to the owner in the same condition that it was found in.
 
 \subsection{User Responsibilities and Obligations}
   \subsubsection{Wear and Tear}
@@ -352,7 +379,7 @@ Deposits are returned to renters 80 hours after the car has been returned to the
     }
 
     In the event that the renter is using a vehicle that was listed on Turo by an owner who has brought their own commercial insurance,
-    \footnote{See \S\ref{commercial-insurance}}
+    \footnote{See \S\ref{commercial-insurance}
     }
     then roadside assistance will be provided by that vehicle's owner and/or their insurance carrier. In these cases, renters are instructed to direct their questions about or requests for roadside assistance to the owner of the vehicle.
 
@@ -360,7 +387,7 @@ Deposits are returned to renters 80 hours after the car has been returned to the
     Owners are required to ensure that their vehicle complies with laws and regulations pertaining to vehicle safety, condition, and operation, including any local seasonal rules or regulations.
 
     Turo recommends that owners obtain an annual mechanical and safety inspection from an ASE-certified
-    \footnote{Automotive Service Excellence.}
+    \footnote{Automotive Service Excellence.
     }
     mechanic. From time to time, Turo may ask owners to obtain an inspection. In this event, owners will download an inspection form provided by Turo, schedule the ASE inspection, and return the completed form.
 
@@ -460,8 +487,8 @@ Is there a single app for all users or do owners and renters each have dedicated
 
 %% References with bibTeX database:
 
-\bibliographystyle{model1-num-names}
-\bibliography{sample.bib}
+%\bibliographystyle{model1-num-names}
+%\bibliography{sample.bib}
 
 %% Authors are advised to submit their bibtex database files. They are
 %% requested to list a bibtex style file in the manuscript if they do
