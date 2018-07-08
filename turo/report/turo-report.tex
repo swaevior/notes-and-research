@@ -89,7 +89,7 @@
 
 % \biboptions{}
 
-\journal{Journal Name}
+\journal{EdgeCase Technology}
 
 \begin{document}
 
@@ -130,7 +130,7 @@
 
 \begin{abstract}
 %% Text of abstract
-\blindtext
+Numerous peer-to-peer car sharing marketplaces exist in the United States, but Turo, Inc. almost certainly operates the largest. In an effort to build a complete characterization of the company's operating principles and the experiences that users have with the service, we collected data on liability exposure, money management, the UI/UX, and other loci of interest. The findings suggest that liability exposure for all parties is large, that Turo, as the market maker, takes a cut of both buy- and sell-side transactions, and that the website and apps, while attractive, suffer from some issues.
 \end{abstract}
 
 \begin{keyword}
@@ -151,47 +151,64 @@ Turo \sep car sharing \sep peer-to-peer \sep liability \sep insurance \sep money
 
 %% main text
 \section{Introduction and Background}
-Formerly known as RelayRides, Turo, Inc., is a company that operates a peer-to-peer car sharing marketplace that allows private owners of vehicles to make them available for rent using an online and/or mobile app interface. In 2017, Turo had approximately four million registered users and 170,000 cars available for rent.
-    \footnote{``Peer-to-peer car rental start-up Turo heads to Germany.'' USA Today, 6 Sept 2017. \url{https://www.usatoday.com/story/tech/2017/09/06/turn-funding-round-92-million-from-daimler/634102001/}
-    }
-The company now has six million registered users and the service covers 5,500 cities across 56 countries.
-  \footnote{\url{https://www.motorauthority.com/news/1117212_truly-keyless-entry-turo-go-unlocks-registered-cars-with-a-smartphone}
+Formerly known as RelayRides, Turo, Inc., is a company that operates a peer-to-peer car sharing marketplace which allows private owners of vehicles to make them available for rent using an online and/or mobile app interface. In 2017, Turo had approximately four million registered users and 170,000 cars available for rent.
+  \footnote{``Peer-to-peer car rental start-up Turo heads to Germany.'' USA Today, 6 Sept 2017. \url{https://www.usatoday.com/story/tech/2017/09/06/turn-funding-round-92-million-from-daimler/634102001/}
   }
-  The company is based in San Francisco and operates in every US state except New York. To date, it has raised over \$180M in venture capital funding.
-    \footnote{\url{https://www.crunchbase.com/organization/turo}}
-  Turo announced a \$92 M series D funding round in 2017 that was led by Daimler AG. In the process, Turo also acquired Croove, Daimler's German car sharing service. Turo launched in Germany in January 2018.
-    \footnote{``The Airbnb of Cars Just Bought A Startup From Its NeWest Investor.'' Fortune, 6 September 2017. \url{http://fortune.com/2017/09/06/turo-mercedes-daimler/}
-    }
+The privately-held company now has six million registered users and the service covers 5,500 cities across 56 countries.
+\footnote{\url{https://www.motorauthority.com/news/1117212_truly-keyless-entry-turo-go-unlocks-registered-cars-with-a-smartphone}
+}
+The company is based in San Francisco and operates in every US state except New York. To date, it has raised over \$180M in venture capital funding.
+  \footnote{\url{https://www.crunchbase.com/organization/turo}}
+Turo announced a \$92M series D funding round in 2017 that was led by Daimler AG. In the process, Turo also acquired Croove, Daimler's German car sharing service. Turo launched in Germany in January 2018.
+  \footnote{``The Airbnb of Cars Just Bought A Startup From Its Newest Investor.'' Fortune, 6 September 2017. \url{http://fortune.com/2017/09/06/turo-mercedes-daimler/}
+  }
 
-  The service is popular; its app has been downloaded more than 45,000
-  \footnote{\url{https://www.crunchbase.com/apptopia_app/e81be748-e411-442a-b218-98316adf73ec\#section-overview}}
-  times and the Website receives more than 2.1M
-    \footnote{\url{https://www.crunchbase.com/organization/turo\#section-web-traffic-by-similarweb}}
-   visitors each month. Estimates place Turo's revenue at \$10M.
+The service is popular; its app has been downloaded more than 45,000 times
+\footnote{\url{https://www.crunchbase.com/apptopia_app/e81be748-e411-442a-b218-98316adf73ec\#section-overview}}
+and the Website receives more than 2.1M
+  \footnote{\url{https://www.crunchbase.com/organization/turo\#section-web-traffic-by-similarweb}}
+visitors each month. Estimates place Turo's revenue at \$10M.
+
+The scope of this research was intended to create a complete characterization of how Turo operates and the experience of buy-side and sell-side users. We considered a number of questions that ranged from how Turo manages liability exposure to the logistics and movement of money in the process of reserving, picking up, and returning a car.
+
+To this end, we downloaded the Turo mobile apps for Android and iOS in addition to accessing the marketplace from the web interface. We successfully registered for the service and were able to create a listing for a 2008 Chevrolet Malibu
+\footnote{Our listing can be seen at \url{https://turo.com/rentals/cars/Chevrolet-Malibu/455238}
+}
+in the Battle Creek, Michigan area.
+
+Despite the fact that we were initially granted ``Approved Driver'' status immediately upon signing up, we were not successful in making a reservation or obtaining a rental car using the service. Turo considers automotive insurance scores, among other things, when approving individual trips. It is likely that the fact that the author has not owned a personal motor vehicle or carried and auto insurance policy for almost 12 months has resulted in a score that Turo perceives as outside of their acceptable risk.
+\footnote{Prior to selling the vehicle and cancelling the auto insurance policy, the author had been continually insured for a decade with only one accident and one moving violation in that span of time.
+}
 
 
 \section{Liability Exposure and Insurance Coverage}
 \label{S:2}
 \subsection{Owner's Insurance}
-Turo offers three protection plans for owners who make their cars available for rent: basic, standard, and premium. The owner's choice of protection plan determines the share of the rental fee that the owner receives. Owners are also permitted to simply carry their own insurance on their vehicle.
+Turo offers three protection plans for owners who make their cars available for rent: basic, standard, and premium. The owner's choice of protection plan determines the share of the rental fee that the owner receives. Owners are also permitted to carry their own commercial insurance.
 
 Insurance coverage in the United States is provided by a group plan administered by Liberty Mutual.
 
-Turo openly admits that their protection plans come with an inherent level of uncertainty. Turo senior claims manager Chris Aragon states that, ``If there’s an engine failure, and it’s something that’s caused by a mechanical failure and not something that the renter could have caused by using the vehicle, that’s something that is not covered by us. That’s something that’s just a mechanical breakdown that you’d be expected to pay for.''
+Turo openly admits that their protection plans come with an inherent level of uncertainty. Turo senior claims manager Chris Aragon states that ``if there's an engine failure, and it's something that's caused by a mechanical failure and not something that the renter could have caused by using the vehicle, that's something that is not covered by us. That's something that's just a mechanical breakdown that you'd be expected to pay for.''
   \footnote{
   Kristen Lee. Jalopnik, 22 February 2017. \url{https://jalopnik.com/how-insurance-works-when-you-rent-out-your-car-on-turo-1792401490}
   }
-This is consistent with standard insurance practices in the United States. Insurance carriers do not typically provide coverage for mechanical failures in vehicles as these cases are often covered by warranties. In the event that a component of the vehicle fails due to driver abuse, Turo states that it will determine the cause and act accordingly.
+This is consistent with standard insurance practices in the United States. Insurance carriers do not typically provide coverage for mechanical failures in vehicles as these cases are often covered by warranties or are expected to be handled out-of-pocket by the owner. In the event that a component of the vehicle fails due to driver abuse, Turo states that it will determine the cause and ``act accordingly.''
 
 \subsubsection{Basic Protection}
-The basic protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to a \$125,000 USD, and has a \$3,000 USD deductible. Private auto insurance deductibles in the United Staes typically range between \$100 and \$1000 USD, though they can be as high as \$2500 in some cases. Under this plan, Turo will pay 20\% up to the first \$3,750 of a damage claim and then covers 100\% beyond that limit, up to a cap of \$125,000. At this level, owners receive 85\% of the trip fee.
+The basic protection plan for owners offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000 USD, and has a \$3,000 USD deductible. For reference, private auto insurance deductibles in the United States typically range between \$500 and \$1000 USD, though they can be as low as \$100 USD or as high as \$2500 USD. Under this plan, Turo will pay 20\% up to the first \$3,750 of a damage claim and then covers 100\% beyond that limit, up to a cap of \$125,000. At this level, owners receive 85\% of the trip fee.
 
 \subsubsection{Standard Protection}
-The standard protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive reimbursement for a replacement vehicle during the period of time that their personal vehicle is being repaired. At this level, owners receive 75\% of the trip fee.
+The standard protection plan for owners offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive reimbursement for a replacement vehicle during the period of time that their personal vehicle is being repaired, up certain limits.
+\footnote{See \S\ref{claims-process}
+}
+At this level, owners receive 75\% of the trip fee.
 
 \subsubsection{Premium Protection}\label{owner-premium-protection}
-The premium protection plan offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive reimbursement for a replacement vehicle during the period of time that their personal vehicle is being repaired, includes coverage for wear and tear on the exterior of the vehicle, and also includes coverage for the loss of rental income.
-\footnote{Turo determines ``lost rental income'' by taking the mean daily rental earnings of the owner for the past 60 days and multiplying that dollar amount by the number of days that the owner's vehicle spent being repaired within a ``reasonable range.'' Turo's ``reasonable range'' is determined like so: Turo assumes that a mechanic should reasonably be able to put in four hours of labor per day to repair the vehicle. Turo takes the number of labor hours on the mechanic's estimate and divides it by four. This ``number of days'' is then multiplied by the 60-day mean rental earnings. In the event that the owner cannot pick up otherwise obtain the vehicle within the calculated number of days, Turo will not pay for futher days of lost rental income.
+The premium protection plan for owners offers \$1,000,000 USD in liability insurance, covers physical damage to the vehicle up to \$125,000, and has a \$0 deductible. Owners also receive reimbursement for a replacement vehicle during the period of time that their personal vehicle is being repaired,
+\footnote{See \S\ref{claims-process}
+}
+includes coverage for wear and tear on the exterior of the vehicle, and also includes coverage for lost rental income.
+\footnote{Turo determines ``lost rental income'' by taking the mean daily rental earnings of the vehicle for the past 60 days and multiplying that dollar amount by the number of days that the owner's vehicle spent being repaired within a ``reasonable range.'' Turo's ``reasonable range'' is determined like so: Turo assumes that a mechanic should reasonably be able to perform four hours of labor per day to repair the vehicle. Turo takes the number of labor hours on the mechanic's estimate and divides it by four. This calculated ``number of days'' is then multiplied by the 60-day mean rental earnings. In the event that the owner cannot pick up otherwise obtain the vehicle within the calculated number of ``days,'' Turo will not pay for additional lost rental income.
 }
 At this level, owners receive 65\% of the trip fee.
 
@@ -201,21 +218,21 @@ Vehicle owners also have the option of opting-out of any coverage provided that 
 \subsection{Renter's Insurance}\label{renters-insurance}
 Renters are presented with a trio of insurance coverage options.
 
-Physical damage protection includes both comprehensive (property damage or loss to a vehicle, including theft, fire, impacts with wildlife,  vandalism, and acts of nature) and collision (protection in the event that two or more vehicles impact each other or in the event that a single vehicle suffers and impact with an object) coverage.
+\textbf{Physical damage protection} includes both comprehensive (property damage or loss to a vehicle, including theft, fire, impacts with wildlife,  vandalism, and acts of nature) and collision (protection in the event that two or more vehicles impact each other or in the event that a single vehicle suffers an impact with an object) coverage.
 
-Personal injury protection varies widely by state, but typically provides coverage for medical expenses, lost income, funeral expenses, and the like for for the driver and passenger in the vehicle with no regard given to who is at fault.
+\textbf{Personal injury protection} varies widely by state, but typically provides coverage for medical expenses, lost income, funeral expenses, and the like for for the driver and passenger in the vehicle with no regard given to who is at fault.
 
-Uninsured/underinsured motorist coverage pays the renter of the renter's passengers for bodily injury they may suffer in the event that they experience a collision caused by a driver without insurance, a hit-and-run driver, a driver who has exhausted the benefits available to them under their own insurance plan, or a driver whose insurance carrier is found to be insolvent and therefore incapable of paying a claim.
+\textbf{Uninsured/underinsured motorist coverage} pays the renter and/or the renter's passengers for bodily injury they may suffer in the event that they experience a collision caused by a driver without insurance, a hit-and-run driver, a driver who has exhausted the benefits available to them under their own insurance plan, or a driver whose insurance carrier is found to be insolvent and therefore incapable of paying a claim.
 
 \subsubsection{Premium Rental Insurance}\label{premium-rental-insurance}
-The premium rental insurance option provides \$1,000,000 USD in bodily injury and property damage coverage to renters. Personal injury protection coverage (also known as no-fault or first party benefits) are capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this amount may be \$0 USD. Uninsured/underinsured motorist coverage is also capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this may be \$0 USD. The renter's out-of-pocket exposure is limited to a deductible payment of \$500, which is collected when the owner reports damage. In the event that the total costs are less than \$500, then the renter will be refunded the difference.
+The premium rental insurance option provides \$1,000,000 USD in bodily injury and property damage coverage to renters. Personal injury protection coverage (also known as no-fault or first party benefits) are capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this amount may be \$0 USD. Uninsured/underinsured motorist coverage is also capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this may be \$0 USD. The renter's out-of-pocket exposure is limited to a deductible payment of \$500, which is collected in full when the owner reports damage. In the event that the total costs are less than \$500, then the renter will be refunded the difference.
 
 \subsubsection{Basic Rental Insurance}\label{basic-rental-insurance}
-The basic rental insurance option provides \$1,000,000 USD in bodily injury and property damage coverage to renters. Personal injury protection coverage (also known as no-fault or first party benefits) are capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this amount may be \$0 USD. Uninsured/underinsured motorist coverage is also capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this may be \$0 USD. The renter's out-of-pocket exposure is limited to a deductible payment of \$3000 USD. In the event that the total costs are less than \$500, then the renter will be refunded the difference.
+The basic rental insurance option provides \$1,000,000 USD in bodily injury and property damage coverage to renters. Personal injury protection coverage (also known as no-fault or first party benefits) are capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this amount may be \$0 USD. Uninsured/underinsured motorist coverage is also capped at the statutory minimum required in the state where the vehicle is registered. In some cases, this may be \$0 USD. The renter's out-of-pocket exposure is limited to a deductible payment of \$3000 USD. If the total costs are less than \$3000, then the renter will be refunded the difference.
 
 \subsubsection{Declining Rental Insurance Coverage}\label{commercial-insurance}
 Renters are also allowed to decline a protection plan. In this case, the renter's exposure is effectively unlimited and is only bounded by the actual cash value of the vehicle plus all related costs, as determined by the process described in \S\ref{claims-process}. In the event that a rented vehicle is lost, stolen, or deemed a total loss,
-\footnote{For Turo's purpose, a ``total loss'' is defined by anticipated repair costs in excess of 75\% of the vehicle's actual cash value.
+\footnote{For Turo's purposes, a ``total loss'' is defined by anticipated repair costs in excess of 75\% of the vehicle's actual cash value.
 }
 then the renter is liable for paying the entire actual cash value of the vehicle, plus all related costs and minus any residual salvage value.
 \footnote{Salvage value is the expected sale value of an asset at the end of its useful life. Insurance companies may employ a number of methods to determine the salvage value of a vehicle, but it is often classified as the sum value of the remaining usable parts in a vehicle.
@@ -224,54 +241,54 @@ then the renter is liable for paying the entire actual cash value of the vehicle
 \subsubsection{Other Sources of Renter's Insurance}
 Some renters may be able to obtain, or already have as a part of their personal auto insurance policy, coverage that extends to vehicles rented by the primary policy holder.
 
-Some renters may be also be able to obtain, or already have as a part of their existing credit card account, coverage that extends to vehicles rented by the cardholder using that credit card as the payment method.
+Some renters may be also be able to obtain, or already have as a part of their existing credit card account, coverage that extends to vehicles rented and driven by the cardholder using that credit card as the payment method.
 
 Such coverage varies widely between insurance carriers and credit providers and may, in some cases, be deficient. Turo states that it is ``highly unlikely that [the renter] would be covered by any credit card insurance when [they] book cars through the Turo marketplace.''
 \footnote{\url{https://support.turo.com/hc/en-us/articles/203990610-I-d-like-a-detailed-explanation-of-insurance-and-protection-provisions}}
 
 \subsubsection{Subrogation}
-Insurance offered by Turo is secondary to any existing coverage that the renter may have through other sources (\emph{i.e.,} that available through a credit card provider, personal auto policy, or other insurance policy). Practically speaking, the secondary nature of Turo's rental insurance offerings means that the renter is primarily liable, but can satisfy their obligations through other sources. In the event of a claim, Turo will first attempt to collect deductibles directly from the renter and then then seek reimbursement from other sources of coverage that the rent may have. (In US insurance practice, this process is known as subrogation.
+Insurance offered by Turo is secondary to any existing coverage that the renter may have through other sources (\emph{i.e.,} that available through a credit card provider, personal auto policy, or other insurance policy). Practically speaking, the secondary nature of Turo's rental insurance offerings means that the renter is primarily liable, but can satisfy their obligations through other sources. In the event of a claim, Turo will first attempt to collect deductibles directly from the renter and then then seek reimbursement from other sources of coverage that the renter may have in a process known as subrogation.
 \footnote{Subrogation is the common law legal doctrine through which one party is entitled to enforce the legal rights or protections of another party for its own benefit.
 }
-)
+
 
 \subsubsection{Exception to Renter's Elected Protection Plans}
 In the event that the renter is found to have violated Turo's terms of service, engaged in prohibited uses of the rented vehicle, or is otherwise found to have recklessly used the rented vehicle, the deductible limits mentioned in \S\ref{premium-rental-insurance} and \S\ref{basic-rental-insurance} do not apply and the renter will be liable for physical damage up the full actual cash value of the vehicle including Turo's related costs.
 
 \subsection{Claims Process}\label{claims-process}
-A renter is supposed to report any incidents involving a rented vehicle to the relevant authorities. Urgent matters should be referred to the local police and either to Turo or to the owner of the vehicle within 24 hours of the incident.
+A renter is supposed to report any incidents involving a rented vehicle to the relevant authorities. Urgent matters should be referred to the local police immediately and either to Turo or to the owner of the vehicle within 24 hours of the incident.
 
-In the event that a host does not learn about an incident that occurred with their vehicle during a trip until after the vehicle has been returned, the owner has 24 hours to report the incident to Turo in order to remain eligible for Turo's coverage.
+In the event that a host does not learn about an incident that occurred with their vehicle until after the vehicle has been returned, the owner has 24 hours to report the incident to Turo in order to remain eligible for Turo's coverage.
 
 If a vehicle's owner has elected to decline Turo's coverage, then they are responsible for making a claim directly to their own insurance company.
 
-If the owner of a vehicle has elected either the premium or the standard Turo protection plans, then they are eligible to receive \$30 USD per day for up to 10 days (\$300 USD cap) to rent a replacement vehicle. They may also elect to receive a travel credit from Turo that may be used to rent a vehicle on the Turo marketplace. Additionally, users may submit receipts from public transport, taxis, and ride services like Uber or Lyft for reimbursement.
+If the owner of a vehicle has elected either the premium or the standard Turo protection plans, then they are eligible to receive up to \$30 USD per day for up to 10 days (\$300 USD cap) to rent a replacement vehicle. They may also elect to receive a travel credit from Turo that may be used to rent a vehicle on the Turo marketplace. Additionally, users may submit receipts from public transport, taxis, and ride-sharing services like Uber or Lyft for reimbursement.
 
-Owners and renters have the option to resolve claims directly with each other. However, if an owner elects to file a claim through Turo, they have until 24 hours after the end of a trip to visit \url{https://turo.com/resolutions} to file an eligible claim. Turo states that one of their claims specialists will make contact with the owner of the vehicle within 24 of a claim being submitted. Turo will then provide instructions to the parties about how to obtain an appraisal.
+Owners and renters have the option to resolve claims directly with each other. However, if an owner elects to file a claim through Turo, they have until 24 hours after the end of a trip to visit \url{https://turo.com/resolutions} to file an eligible claim. Turo states that one of their claims specialists will make contact with the owner of the vehicle within 24 hours of a claim being submitted. Turo will then provide instructions to the parties about how to obtain an appraisal.
 
-Turo uses a third-party administrator called the Littleton Group to determine a vehicle's actual cash value. Littleton, in turn, uses AutoClaims Direct, a nation-wide network of independent auto appraisers. In the event of a claim, AutoClaims Direct will dispatch an appraiser to perform a visual inspection of the vehicle and to obtain photographic documentation of the vehicle's condition. The appraiser will also collect information on the general condition of the vehicle, the odometer reading, and any other information that may help accurately determine the value of the vehicle.
+Turo uses a third-party administrator called the Littleton Group to determine a vehicle's actual cash value. Littleton, in turn, uses AutoClaims Direct, a nation-wide network of independent auto appraisers. In the event of a claim, AutoClaims Direct will dispatch an appraiser to perform a visual inspection of the vehicle and to obtain photographic documentation of the vehicle's condition. The appraiser will also collect information on the general condition of the vehicle, the odometer reading, and any other information that may help accurately determine the actual cash value of the vehicle.
 
-Software is employed to sweep across the market to obtain information on comparable vehicles to the one subject to a claim. The software will then determine the value of the vehicle based on how it compares in condition and mileage to comparable vehicles on the market at that time. It may also include a factor that accounts for depreciation.
+Software is employed to sweep across the market to obtain information on  vehicles comparable to the one subject to a claim. The software will then determine the value of the vehicle based on how it compares in condition and mileage to comparable vehicles on the market at that time. It may also include a factor that accounts for depreciation.
 
 In some cases, Turo may direct users making a claim to download an app and upload photos of the damage.
 
 If a claim made to Turo is determined to be eligible, Turo notifies the renter and charges their payment method(s) for an initial claim processing cost of up to \$575.
 
-The owner is then presented with their options for resolution. They may elect to not pursue, the owner and the renter can elect to resolve the issue directly with each other, the owner may resolve the claim directly with the insurance carrier of the renter (or a third party in the event that the driver is found no to be at fault), or the claim may be processed through Turo's claims administrator.
+The owner is then presented with their options for resolution. They may elect not to pursue further action, resolve the issue directly with the renter, resolve the claim directly with the insurance carrier of the renter (or a third party in the event that the renter is found not to be at fault), or the claim may be processed through Turo's claims administrator.
 
 Depending on the resolution option elected by the parties, the owner's car may be repaired and the renter may be responsible for settling their financial obligations, including payment of their deductible.
 
 \section{Data and Metrics}
   \subsection{Data Collection}
-  At this time, Turo relies entirely on renters and owners to provide data to the company about the vehicles available on the marketplace.
+  At this time, Turo relies on renters and owners to provide data to the company about the vehicles available on the marketplace.
   \subsection{Mileage}
   Mileage tracking is performed by the owner by submitting photos before and after a trip. All cars on the Turo marketplace have daily, weekly, and monthly mileage limits that are set by the owner.
   \subsection{Location Tracking}
-  Turo does not support vehicle location tracking.
+  Turo does not currently support vehicle location tracking.
   \subsection{Fuel}
   Fuel tracking is performed by the owner by submitting photos of the fuel gauge before and after a trip. Renters are required to replace the fuel that they use.
   \subsection{Turo Go}
-  Turo is presently signing users up for a beta program called Turo Go that will collect data and also allow renters to unlock a car using their smartphone, thereby sidestepping the issue of needing to liaise in person with the owner of the vehicle.
+  Turo is presently signing users up for a beta program called Turo Go that will collect data and also allow cars to be unlocked with a smartphone, thereby sidestepping the issue of needing to liaise in person with the owner of the vehicle. Unlocking and data collection will be provided by a device plugged into the vehicle's OBD-II port. Turo Go is expected to launch in select US cities in the second half of 2018.
   \footnote{\url{https://explore.turo.com/turo-go-announce/}}
   \footnote{\url{https://www.motorauthority.com/news/1117212_truly-keyless-entry-turo-go-unlocks-registered-cars-with-a-smartphone}
   }
@@ -290,27 +307,27 @@ Depending on the resolution option elected by the parties, the owner's car may b
   At this time, renters must meet in person with the owner of the vehicle in order to obtain keys to the vehicle. Turo recommends that renters and owners both take pictures of the vehicle's interior and exterior to aid in potential claims after the vehicle is returned.
 
   \subsection{Delivery Option}
-  Owners may configure their listing to allow for delivery to local airports or an arbitrary location elected by the renter. The fee for this service is typically \$50 USD.
+  Owners may configure their listing to allow for delivery to local airports or an arbitrary location elected by the renter. The fee for this service is typically \$50 USD, but it may be manually set by the owner.
 
   \subsection{Returning a Vehicle}
-  By default, a vehicle must be returned to the location from which it was picked up. There does exist anecdotal evidence of renters contacting owners to strike an informal agreement to drop off at a different location.
+  By default, a vehicle must be returned to the location from which it was picked up. There does exist anecdotal evidence of renters contacting owners to strike an informal agreement to drop off the car at a different location.
 
 \section{Money Management}
 
   \subsection{Payment Methods and Payment Timing}
-  In the United States. Turo accepts credit cards branded as Visa, Mastercard, Discover, or American Express, debit cards branded Visa or Mastercard, Apple Pay, and Google Pay. These payment methods are required to be in the name of the Turo account holder.
+  In the United States. Turo accepts credit cards branded as Visa, Mastercard, Discover, or American Express, debit cards branded Visa or Mastercard, Apple Pay, and Google Wallet. These payment methods are required to be in the name of the Turo account holder.
 
-  Turo does not accept prepaid card, temporary bank cards, or cards that are not linked to a bank account.
-  \subsection{Payment Timing}\label{timing}
+  Turo does not accept prepaid cards, temporary bank cards, or cards that are not linked to a bank account.
+  \subsection{Timing of Payments}\label{timing}
     \subsubsection{Renters}
     Owners of vehicles listed on Turo may elect to manually approve each reservation request from renters or they may make designate their vehicle as one that renters can ``Book Instantly.''
 
     Under the manual-approval option, renters' debit or credit cards are authorized
-    \footnote{An authorization hold, preauthorization, preauth, or card authorization is the practice of verifying transactions that have been initiate with a debit or credit card. Banks will make the balance required to pay the charge unavailable until either the merchant clears the transaction or the hold ``falls off,'' typically within 3 to 5 business days.
+    \footnote{An authorization hold, preauthorization, preauth, or card authorization is the practice of verifying transactions that have been initiated with a debit or credit card. Banks will make the balance required to pay the charge unavailable until either the merchant clears the transaction or the hold ``falls off,'' typically within 3 to 5 business days.
     }
     but not yet charged. When the owner approves the booking, Turo then clears the transaction and the renter's card is charged.
 
-    The Apple Pay and Google Wallet payments methods are charged immediately.
+    The Apple Pay and Google Wallet payment methods are charged immediately.
 
     When a vehicle that is listed as instantly available is booked, the renter's payment method is immediately charged.
 
@@ -318,18 +335,18 @@ Depending on the resolution option elected by the parties, the owner's car may b
     Thirty minutes after a trip ends, Turo automatically initiates ACH payments
     \footnote{Automated Clearing House, or ACH, is an electronic network for financial transactions in the United States. ACH credits include direct deposits and payroll. It is also possible to make debit transactions using ACH out of bank accounts. ACH transactions typically take 1-3 business days to clear.
     }
-    for then owner's share of the trip price. For extended trips, owners receive a partial payment on day 7 of the trip and subsequent partial payments every seven days until the trip ends. To allow ACH transactions, owners must provide Turo with the account and routing number of their bank account. Turo says that a PCI Level 1-compliant third party stores this information and facilitates payments.
+    for the owner's share of the trip price. For extended trips, owners receive a partial payment on day 7 of the trip and subsequent partial payments every seven days until the trip ends. To allow ACH transactions, owners must provide Turo with the account and routing number of their bank account. Turo says that a PCI Level 1-compliant third party stores this information and facilitates payments.
 
   \subsection{Pricing}
     \subsubsection{Trip Pricing}
-    Owners may price their vehicles themselves or allow Turo to determine pricing for them based on vehicle make, model, year, mileage, and geographic area. Renters may toggle the days and length of their trip and pricing updates live online and in the apps. Hosts may also charge different amounts for different days of the week (\emph{e.g.,} weekends) or a different daily rate for longer trips (typically a discount).
+    Owners may price their vehicles themselves or allow Turo to determine pricing for them based on vehicle make, model, year, mileage, and geographic area. Renters may toggle the days and length of their trip and pricing updates live online and in the apps. Owners may also charge different amounts for different days of the week (\emph{e.g.,} weekends) or a different daily rate for longer trips (typically at a discount).
     \subsubsection{Trip Fee}
-    Renters also pay a trip fee that is calculated as a variable percentage of up to 25\% of the trip price. Renters are shown the exact amount as they are checking out. Turo states that the trip fee covers operating costs.
+    Renters also pay a ``trip fee'' that is calculated as a variable percentage of up to 25\% of the trip price. Renters are shown the exact amount as they are checking out. Turo states that the trip fee covers operating costs.
     \subsubsection{Protection Plan Pricing}
-    Turo offers three protection plans, premium, basic, and no protection (See \S\ref{renters-insurance}). In the United States, premium protection is 40\% of the trip price, basic is 15\%, and there is no charge for renter who choose to decline a protection plan. Some vehicle owners who opt to carry their own commercial insurance are allowed to charge a their own fee for that protection. Owners are supposed to declare whether they are charging a separate protection fee or if that cost is included in the trip price.
+    Turo offers three protection plans to renters: premium, basic, and no protection (See \S\ref{renters-insurance}). In the United States, premium protection is 40\% of the trip price, basic is 15\%, and there is no charge for a renter who chooses to decline a protection plan. Vehicle owners who opt to carry their own commercial insurance are allowed to charge their own fee for that protection. Owners are supposed to declare whether they are charging a separate protection fee or if that cost is included in the trip price.
 
   \subsection{Young Driver Fees}
-  Renters between the ages of 21 and 24 incur a charge that is calculated as the great of 30\% of the trip price or \$10 USD, whichever is greater. Vehicles in the marketplace whose owners have chosen to carry their own commercial insurance do not incur this cost and such owners are permitted to charge young drivers their own fee. Owners are supposed to declare whether they are charging a young driver fee.
+  Renters between the ages of 21 and 24 incur a charge that is calculated as the greater of 30\% of the trip price or \$10 USD. Vehicles in the marketplace whose owners have chosen to carry their own commercial insurance do not incur this cost and such owners are permitted to charge young drivers their own fee. Owners are supposed to declare whether they are charging a young driver fee.
 
   \subsection{Security Deposits}
   In some cases, Turo may require renters to pay a security deposit before they will be permitted to drive a vehicle. Deposits are collected in full before a trip begins. Instantly booked trips see the deposit added at checkout while trips requiring owner approval will see deposits charged when the owner approves the trip. If the deposit cannot be collected, booking of the trip will fail.
@@ -340,7 +357,7 @@ Depending on the resolution option elected by the parties, the owner's car may b
   Owners may elect to offer to deliver their cars to local airports or custom locations. These fees, when applicable, are clearly noted in the listing for the vehicle.
 
   \subsection{Extras}
-  Some owners may elect to offer ``Extras'' to their renters and is permitted to set their own fees for these types of items. Where applicable, fees for extras are displayed at checkout time. Extras may include things like tents, roof racks, bikes, and kayaks, as examples of physical items, and post-trip refueling, unlimited mileage, or post-trip cleaning as intangibles. Owners may charge a flat fee for an extra or they may choose to charge on a daily basis.
+  Some owners may elect to offer ``Extras'' to their renters and are permitted to set their own fees for these types of items, up to a limit of \$999 USD. Where applicable, fees for extras are displayed at checkout time. Extras may include things like tents, roof racks, bikes, and kayaks, as examples of physical items, and post-trip refueling, unlimited mileage, or post-trip cleaning as intangibles. Owners may charge a flat fee for an extra or they may choose to charge on a daily basis.
 
   \subsection{Refunds}
   Refunds for US payment methods typically take 3 to 5 business days and are deposited back into the account used to originally make the payment.
@@ -349,22 +366,18 @@ Depending on the resolution option elected by the parties, the owner's car may b
   See \S\ref{timing} for a discussion of card authorizations and payment timing.
 
   \subsection{Ending a Trip Early}
-  Renters who end their trips early, do so through the website or mobile app, and receive approval from the owner, are eligible to receive a partial refund.
+  Renters who end their trips early, do so through the website or mobile app, and receive approval from the owner are eligible to receive a prorated refund.
 
 
 \section{User Experience}
-
-If the Tenant did not like the car? If payment occurred before, how does the money refund happen?
-
-
 \subsection{User Responsibilities and Obligations}
   \subsubsection{Wear and Tear}
     \paragraph{Owners}
-    ``Normal wear and tear'' is the result of the normal operation of a vehicle and therefore should be an expected part of the experience of sharing or renting a car on Turo. Owners are not, under any circumstances, protected against normal wear and tear of the interior of their vehicle(s). Owners who have elected the premium protection plan (\S\ref{owner-premium-protection}) receive protection against normal exterior wear and tear.
+    ``Normal wear and tear'' is the result of the normal operation of a vehicle and therefore should be an expected part of the experience of sharing or renting a car on Turo. Owners are not, under any circumstances, protected against normal wear and tear of the interior of their vehicle(s). Owners who have elected the premium protection plan (\S\ref{owner-premium-protection}) receive protection against exterior wear and tear.
       \footnote{Defined by Turo as ``any dings, dents, cracks, or scratches to the exterior body of the vehicle that is 3 inches in diameter or less. This includes, but is not limited to, rims, wheels, hubcaps, any painted or textured area for the body of the vehicle, and moldings.'' See \url{https://support.turo.com/hc/en-us/articles/217043898}.
       }
     \paragraph{Renters}
-    Renters are not responsible for wear and tear that are the result of normal use of a vehicle.
+    Renters are not responsible for wear and tear that is the result of normal use of a vehicle.
 
     Renters are fully responsible for damage that is the result of misuse or prohibited use of a vehicle, ``significant damage'' to the interior of a vehicle, and mechanical damage due to negligence, intentional acts, or improper driving on the part of the renter.
       \footnote{Owners who decline any of Turo's in-house protection plans and instead opt to provide their own commercial insurance (see \S\ref{commercial-insurance}) are not covered by Turo against any of the aforementioned items.
@@ -374,9 +387,7 @@ If the Tenant did not like the car? If payment occurred before, how does the mon
     \paragraph{Renters}
     If the vehicle that a renter is using is covered by one of Turo's own protection plans, then renters can be connected with a dispatcher, available 24/7 who has the ability to send a service provider to the vehicle's location. Roadside assistance is only available in the United States, Canada, and Germany.
 
-    Turo states that renters should be aware that they may be liable for ``fees associated with the actual services provided (towing, locksmith, battery jump, etc.) during the event.''
-    \footnote{``Do you offer national roadside assistance?'' Turo Support. Retrieved from \url{https://support.turo.com/hc/en-us/articles/203990910-Do-you-offer-national-roadside-assistance-}
-    }
+    Renters may be liable for fees associated with the actual services provided during a roadside assistance event (\emph{e.g.,} towing, locksmith services, battery jumps, etc.
 
     In the event that the renter is using a vehicle that was listed on Turo by an owner who has brought their own commercial insurance,
     \footnote{See \S\ref{commercial-insurance}
@@ -395,18 +406,17 @@ If the Tenant did not like the car? If payment occurred before, how does the mon
 
     In the event that the owner's vehicle breaks down while it is being rented and such a breakdown is found to be a result of a violation of Turo's maintenance policy, Turo will charge the host \$100 USD. In the event that the renter makes contact with the 24/7 Turo support line and requests roadside assistance or a tow, Turo will also assess a \$200 USD administrative fee to the owner.
   \subsection{Traffic Violations and Tickets}
-  If the renter violates the traffic rules, who is fined or ticketed and how? (where fines come, how to pay it first and how then compensation takes place)
-    \paragraph{Renters}
+    \subsubsection{Renters}
     Renters are responsible for paying all tickets for violations that they commit during their trip, with the exception of moving violations and photo tickets.
-      \footnote{In the event that a vehicle is ticketed for speeding, running a red light, or other moving violations, including those captured by cameras, and the owner of the vehicle receives said ticket via mail, then Turo agrees that it will provide the information required by the ticketing body or to the owner such that the owner may contest the ticket and transfer liability for the moving violation to the renter.
+      \footnote{\label{moving-violations}In the event that a vehicle is ticketed for speeding, running a red light, or other moving violations, including those captured by cameras, and the owner of the vehicle receives said ticket via mail, then Turo agrees that it will provide the information required by the ticketing body or the owner such that the owner may contest the ticket and transfer liability for the moving violation to the renter.
 
-      Renters are not supposed to pay moving violations or photo tickets immediately because the liability for such violations (including ``points'' assigned in many US states) may be assigned to the owner of the vehicle for a traffic offense that they did not actually commit.
+      Renters are not supposed to pay moving violations or photo tickets immediately because the liability for such violations (including penalty ``points'' assigned in many US states) may be assigned to the owner of the vehicle for a traffic offense that they did not actually commit.
       }
-    Renters are also responsible for parking tickets, towing fees, and fines that may be levied for up to 24 hours after the end of a trip, provided that such tickets, fines, and/or fees are a result of improper parking on the behalf of the renter.
+    Renters are also responsible for parking tickets, towing fees, and fines that may be levied for up to 24 hours after the end of a trip, provided that such tickets, fines, and/or fees are a result of improper parking by the renter.
 
-    The renter is responsible for informing the owner in the event that they receive a ticket during their trip and ought to immediately pay it.
+    The renter is responsible for informing the owner when they receive a ticket during their trip and ought to immediately pay it, except for those tickets mentioned in footnote \ref{moving-violations}.
 
-    \paragraph{Owners}
+    \subsubsection{Owners}
     In the event that an owner notifies Turo that a ticket was received during the renter's trip or within the 24 hour period thereafter, Turo will charge the renter's payment method(s) for the total cost of the ticket plus administration fees levied by Turo. Owners must submit their requests for reimbursement within 90 days after the trip in question ended, provide documentation of the ticket, and receipts for payment of the ticket.
 
   \subsubsection{Canceling a Reservation}
@@ -416,56 +426,96 @@ If the Tenant did not like the car? If payment occurred before, how does the mon
     }
     states that renters may cancel their trips through the Turo website or mobile apps. Cancellations take place immediately.
 
-    If a renter cancels a trip within one hour of making the reservation, they are refunded 100\% of the trip price and 100\% of the Turo trip fee. Cancellations made more than seven days before a trip is scheduled to begin result in 100\% of the trip price being refunded, but Turo keeps the trip fee. Renters receive a refund for 90\% of the trip price and 0\% of the trip fee if cancellations are made between 1 and 7 days of the trip's scheduled start. Cancellations made with less than 24 hours remaining until the scheduled start of the trip are not eligible for any refunds.
+    If a renter cancels a trip within one hour of making the reservation, they are refunded 100\% of the trip price and 100\% of the Turo trip fee. Cancellations made more than seven days before a trip is scheduled to begin result in 100\% of the trip price being refunded, but Turo keeps the trip fee. Renters receive a refund for 90\% of the trip price and 0\% of the trip fee if cancellations are made between 1 and 7 days of the trip's scheduled start. Cancellations made with less than 24 hours remaining until the scheduled start of the trip are not eligible for a refund.
 
-    Protection fees are refunded in full if the renter cancels the trip before the trip is scheduled to start, as are young driver fees.
+    Protection fees and young driver fees are refunded in full if the renter cancels the trip before the trip is scheduled to start.
 
     \paragraph{Owners}
     In the event that the owner of the vehicle needs to cancel a trip, then they must contact the renter in writing using the Turo website or mobile apps. Cancellations by owners are effective immediately and result in a 100\% refund being issued to the renter.
 
-    Hosts will be charged a \$50 USD fee if they cancel a trip with fewer than 24 hours remaining until the trip's scheduled start. Cancellations made by owners outside of the 24 hour window result in a \$25 USD fee being charged to the owner. Turo states that additional penalties, including having a car delisted, may result if an owner repeatedly cancels trips.
+    Hosts will be charged a \$50 USD fee if they cancel a trip with fewer than 24 hours remaining until the trip's scheduled start. Cancellations made by owners outside of the 24 hour window result in a \$25 USD fee being charged to the owner. Additional penalties, including having a car delisted, may result if an owner repeatedly cancels trips.
 
     \paragraph{Flight Delays and Flight Cancellations}
     In the event that a flight that the renter was scheduled to take is delayed or canceled, Turo requires the renter to make contact with the owner to request a modification to the trip's itinerary to reflect a new start time. Owners are expected to make a good faith effort to accommodate new start times for trips.
 
-    In the event that the owner cannot or does not accommodate a new start time for the trip as the result of a flight delay or cancellation, Turo will issue a 100\% refund to renters. Renters must provide evidence that their flight suffered an issue.
+    In the event that the owner cannot or does not accommodate a new start time for the trip as the result of a flight delay or cancellation, Turo will issue a 100\% refund to renters. Renters must provide evidence that their flight was delayed or canceled.
 
-    Renters must make contact with owners at 1 hour before the trip start time to be eligible for a refund. They must also notify Turo within 24 hours after the scheduled start time of trip in order to be eligible for a refund.
+    Renters must make contact with owners at least 1 hour before the trip start time to be eligible for a refund. They must also notify Turo within 24 hours after the scheduled start time of trip in order to be eligible for a refund.
 
   \subsubsection{Cleaning Cars}
   Owners are expected to provide clean cars to renters. Renters are instructed to contact Turo Support if they take possession of a car that is dirty. Similarly, renters are expected to return vehicles in the same or better condition as when they found them. Owners are also instructed to contact Turo Support if their vehicle is returned them in unclean condition.
 
     \paragraph{Cleaning Claims}
-    Turo requires owners to send before and after pictures within 24 hours of a trip's end if their car was returned to them in unclean condition. The check-in and check-out features of the mobile apps are recommended for prompt filing and handling of cleaning claims. After Turo has reviewed the information, Turo may receive a reimbursement based on the severity of the claim.
+    Turo requires owners to send before and after pictures within 24 hours of a trip's end if their car was returned to them in unclean condition. The check-in and check-out features of the mobile apps are recommended for prompt filing and handling of cleaning claims. After Turo has reviewed the information, Turo may issue a reimbursement based on the severity of the claim.
 
     \paragraph{Cleaning Fines and Fees}
     \begin{itemize}
-      \item Not Eligible
-      Small amounts of refuse, crumbs, dirt, or sand, small marks that can be easily cleaned.
-      \item Light Cleaning: \$30
-      Significantly dirtier exterior than when car was rented out; significantly dirtier floor mats; large amounts of crumbs, dirt, sand, or food.
-      \item Medium Cleaning: \$50
-      Light stains or residue on hard surfaces.
-      \item Heavy Cleaning: \$100
-      Major stains or residue on fabric or other hard-to-clean surfaces.
-      \item Severe Cleaning: \$150
-      Any of the previously mentioned situations at such a level that cleanup requires steam cleaning or detailing of the vehicle.
-      \item Pet Hair: \$150
-      Applicable to events in which a pet enters a vehicle without prior consent of the owner, events in which the owner consents to the presence of a pet but the vehicle is returned with significant amounts of pet hair. Turo includes service animals in this policy.
-      \item Smoking: \$50 or \$150
-      \$50 charged for smoke smell removal and \$150 for smoke smell removal and removal or cleaning of cigarette butts, ash, etc. In the event that burn marks are found in a returned vehicle, owners are instructed to submit a damage claim, not request reimbursement for cleaning.
-      \item Maximum: \$250
-      Reserved for a combination of issues like the combination of smoke remnants and severe cleaning level soiling.
-
+      \item \textbf{Not Eligible}
     \end{itemize}
+      Small amounts of refuse, crumbs, dirt, or sand, small marks that can be easily cleaned.
+    \begin{itemize}
+      \item \textbf{Light Cleaning: \$30}
+    \end{itemize}
+      Significantly dirtier exterior than when car was rented out; significantly dirtier floor mats; large amounts of crumbs, dirt, sand, or food.
+    \begin{itemize}
+      \item \textbf{Medium Cleaning: \$50}
+    \end{itemize}
+      Light stains or residue on hard surfaces.
+    \begin{itemize}
+      \item \textbf{Heavy Cleaning: \$100}
+    \end{itemize}
+      Major stains or residue on fabric or other hard-to-clean surfaces.
+    \begin{itemize}
+      \item \textbf{Severe Cleaning: \$150}
+    \end{itemize}
+      Any of the previously mentioned situations at such a level that cleanup requires steam cleaning or detailing of the vehicle.
+    \begin{itemize}
+      \item \textbf{Pet Hair: \$150}
+    \end{itemize}
+      Applicable to events in which a pet enters a vehicle without prior consent of the owner or events in which the owner consents to the presence of a pet but the vehicle is returned with significant amounts of pet hair. Turo includes service animals in this policy.
+    \begin{itemize}
+      \item \textbf{Smoking: \$50 or \$150}
+    \end{itemize}
+      \$50 charged for smoke smell removal and \$150 for smoke smell removal and as well as cleaning of cigarette butts, ash, etc. In the event that burn marks are found in a returned vehicle, owners are instructed to submit a damage claim, not request reimbursement for cleaning.
+    \begin{itemize}
+      \item \textbf{Maximum: \$250}
+    \end{itemize}
+      Reserved for a combination of issues like the combination of smoke damage and severe level cleaning.
 
 \section{User Interface}
-We need all screenshots of the renter’s private office (after the trip is completed). I need screenshot of every page inside the app (Mobile and desktop)
-If it works: personal car owner's office - what he sees there, screenshots of the pages.
-Is there a single app for all users or do owners and renters each have dedicated apps?
+Turo has only one app that is used by both owners and renters. It is possible to list a vehicle and to rent one using the same Turo account.
 
-  \subsection{Renters}
-  \subsection{Owners}
+Screen capture footage of the apps and web interface being used will be delivered alongside this report.
+
+\subsection{Screen Captures of User Interfaces}
+  \subsubsection{iOS}
+  The iOS app screen capture was done using the native screen recording feature on an iPhone 7 Plus running iOS 12.0 Public Beta 1 (build number 16A5308e). The iOS app is fluid and easy to operate. It features an omnipresent menu button and a bar at the bottom of the screen that function as ``tabs'' that allow for easy switching between primary functions of the app. If an owner wishes to change anything about his or her listing beyond availability times and dates, then it is necessary to log in to the Turo mobile site using a mobile browser.
+
+  The iOS screen recording can be accessed at:
+
+  \subsubsection{Android}
+  The Android app screen capture was done using AZ Screen Recorder on a Pixel 2 running Android 8.1.0 (build number OPM2.171019.029.B1). Compared to the iOS app, the Android version is significantly jerkier and more sensitive to touchscreen errors. All functions in the Android app are located inside of a menu. Compared to the iOS app, the Android version also contains more options about a vehicle listing that can be altered by the owner from directly inside the application.
+
+  The Android screen recording can be accessed at:
+
+  \subsubsection{Desktop Browser}
+  The Turo website screen capture was done on a late 2017 MacBook Pro running macOS High Sierra Version 10.13.4. We attempted to access the website through both Google Chrome (Version 67.0.3396.99 64-bit Official Build) and Safari (Version 11.1 (13605.1.33.1.2)) browsers and found the Chrome version to be buggy. The screen capture was inside of the Safari browser with OBS software.
+
+  The macOS Safari screen recording can be accessed at: 
+
+  Of particular note was the experience we had listing a a vehicle using the Turo website. We initially tried to upload pictures of our vehicle that were taken with an iPhone 7 Plus running iOS 12, which shoots in the HEIC format. Not expecting compatibility with this image format, we manually converted our images to high-quality PNGs and attempted to upload them using Chrome. The uploader tool, which was only partially displayed on the webpage, returned a generic error message when we attempted to upload the PNGs.
+
+  We then switched to Safari. The uploader was fully displayed and opened a Finder window. It did not allow for upload of the original HEIC images, but gave the impression that the PNGs would be accepted since the file names were displayed in full color. An attempt to upload the PNGs returned the same generic error message.
+
+  We contacted Turo chat support to inquire as to the file types and sizes necessary. After providing the chat agent (who took 15 minutes to become available despite the fact that we were first in the queue) with the specifications of our machine, operating system, and browser(s), the first suggestion by the support agent was that we switch to the Windows operating system. While we do have Bootcamp and corresponding version of Windows 8 & 10 installed on our machines, we do believe that most Apple Mac product users will have this ability. We insisted that we be provided with a solution that would work on a Mac.
+
+  The support agent then suggested that we ``crop the images,'' a suggestion that was again impractical as the images that we had captured, in a style consistent with other listings on Turo, were full-frame exposures of our vehicle. We insisted that the support agent consult his documentation or someone knowledgeable and return to us with specs for filetypes and sizes. He was gone for several minutes. In the intervening time, we converted the images to sub-5MB jpegs and had success in uploading these new file with the uploader tool in Safari. It is unclear whether it was the conversion, the compression, or both that allowed the upload to proceed successfully.
+
+  Our experience with the chat support agent, who was clearly not given the tools, documentation, or information to adequately assist us left us wondering why there was not simply some text in the Upload box of the List Your Vehicle section of the site that plainly indicated filetypes and sizes that the tool accepts.
+
+
+
+
 
 
 
